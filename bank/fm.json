@@ -1,0 +1,254 @@
+[
+  {
+    "id": "FM-01",
+    "subject": "FM",
+    "stem": "Cancer patient asks doctor not to tell family. Doctor respects her wishes. Which principle is applied?",
+    "options": [
+      "A. Beneficence only",
+      "B. Confidentiality / respect for autonomy",
+      "C. Malpractice",
+      "D. Paternalism",
+      "E. Justice only"
+    ],
+    "answer": "B",
+    "explanation": "Recall: confidentiality/autonomy – competent adult controls disclosure. Breach only for serious harm/public safety per law."
+  },
+  {
+    "id": "FM-02",
+    "subject": "FM",
+    "stem": "Child critically ill, parents refuse life-saving treatment, want religious healer only. Best?",
+    "options": [
+      "A. Discharge home",
+      "B. Engage respectfully + bring trusted religious leader + ethics + seek legal authorisation to save life; never abandon",
+      "C. Ignore parents aggressively",
+      "D. Treat secretly without documentation",
+      "E. Do nothing"
+    ],
+    "answer": "B",
+    "explanation": "Paediatric emergency: best interests override refusal. Culturally sensitive engagement + ethics/legal + document. Life-threatening = court order if needed."
+  },
+  {
+    "id": "FM-03",
+    "subject": "FM",
+    "stem": "Radiologist almost filed report for wrong patient but caught before submitting. Event type?",
+    "options": [
+      "A. Sentinel event with death",
+      "B. Near miss – no harm due to catch; report + systems fix",
+      "C. Negligence proven",
+      "D. No need to report",
+      "E. Malpractice payout"
+    ],
+    "answer": "B",
+    "explanation": "Near miss: error intercepted. Report to patient-safety system, disclose per policy, fix ID checks/barcoding."
+  },
+  {
+    "id": "FM-04",
+    "subject": "FM",
+    "stem": "Doctor dismissed serious rash as normal despite nurse concern; patient discharged, returned and died. Error type?",
+    "options": [
+      "A. Near miss",
+      "B. Negligence/malpractice – breach of duty + harm",
+      "C. System success",
+      "D. No error",
+      "E. Confidentiality breach"
+    ],
+    "answer": "B",
+    "explanation": "Ignoring red flags + hierarchy failure → harm. Classic negligence: duty, breach, causation, damages. Needs disclosure + review."
+  },
+  {
+    "id": "FM-05",
+    "subject": "FM",
+    "stem": "Valid informed consent requires?",
+    "options": [
+      "A. Signature only",
+      "B. Capacity + disclosure (risks/benefits/alternatives) + voluntariness + understanding",
+      "C. Family signs always",
+      "D. No information",
+      "E. Coercion"
+    ],
+    "answer": "B",
+    "explanation": "Consent is a process, not a form. Document discussion, use interpreter, assess capacity, allow refusal."
+  },
+  {
+    "id": "FM-06",
+    "subject": "FM",
+    "stem": "Breaking bad news: best framework?",
+    "options": [
+      "A. Blurt in corridor",
+      "B. SPIKES (Setting, Perception, Invitation, Knowledge, Emotions, Strategy)",
+      "C. Lie",
+      "D. Tell family only",
+      "E. Phone message"
+    ],
+    "answer": "B",
+    "explanation": "SPIKES + privacy + empathy + clear plan + support person + written summary."
+  },
+  {
+    "id": "FM-07",
+    "subject": "FM",
+    "stem": "Elderly independent woman falls, no injury. Most useful next step?",
+    "options": [
+      "A. Move to nursing home immediately",
+      "B. Medication review + orthostatic vitals + vision/balance/home hazards + bone health",
+      "C. Alcohol rehab in all",
+      "D. Bed rest",
+      "E. No assessment"
+    ],
+    "answer": "B",
+    "explanation": "Recall: meds review first (sedatives, antihypertensives). Then gait, vision, footwear, home safety, vitamin D/calcium, physio."
+  },
+  {
+    "id": "FM-08",
+    "subject": "FM",
+    "stem": "Hypertensive on nitrates + alpha-blocker, recurrent syncope, normal ECG, no chest pain/palpitations/SOB. Most likely cause?",
+    "options": [
+      "A. Arrhythmia proven",
+      "B. Orthostatic hypotension from vasodilators",
+      "C. Anaemia only",
+      "D. Seizure",
+      "E. MI"
+    ],
+    "answer": "B",
+    "explanation": "Recall: drug-induced orthostasis. Check lying/standing BP, review meds, hydrate, compression, deprescribe."
+  },
+  {
+    "id": "FM-09",
+    "subject": "FM",
+    "stem": "Asymptomatic, prior chest pain/syncope, exam normal. Best cardiac test?",
+    "options": [
+      "A. Holter only",
+      "B. Exercise stress test (± imaging) to unmask ischaemia/arrhythmia",
+      "C. No test",
+      "D. Chest X-ray only",
+      "E. D-dimer"
+    ],
+    "answer": "B",
+    "explanation": "Recall: exertional syncope/chest pain history → stress testing/echo workup even if now well. Refer cardiology."
+  },
+  {
+    "id": "FM-10",
+    "subject": "FM",
+    "stem": "70-year-old HTN, EF 65% on old echo, for elective non-cardiac surgery, asymptomatic. Pre-op?",
+    "options": [
+      "A. Repeat echo + stress test in all",
+      "B. No routine echo; ECG + risk scores (RCRI) + optimise BP/meds; echo only if new murmur/HF",
+      "C. Cancel surgery",
+      "D. Cardiac cath all",
+      "E. Stop all meds"
+    ],
+    "answer": "B",
+    "explanation": "Normal EF on prior echo + currently asymptomatic with good functional capacity → no repeat echo. Follow ACC/AHA algorithm."
+  },
+  {
+    "id": "FM-11",
+    "subject": "FM",
+    "stem": "Runner with pinpoint greater-trochanter pain, no trauma. Management?",
+    "options": [
+      "A. Steroid injection first in all",
+      "B. NSAIDs + activity modification + physio (ITB/glute-med rehab); X-ray only if red flags",
+      "C. Urgent MRI all",
+      "D. Surgery now",
+      "E. Complete rest 6 months"
+    ],
+    "answer": "B",
+    "explanation": "Greater-trochanteric pain syndrome: conservative first. Inject only if persistent; rule out hip OA/fracture if atypical."
+  },
+  {
+    "id": "FM-12",
+    "subject": "FM",
+    "stem": "Woman lifting heavy: low-back pain radiating posterior leg, no red flags, neuro intact. Next?",
+    "options": [
+      "A. Urgent whole-spine MRI in all",
+      "B. Stay active + analgesia + physio + red-flag safety-net; image only if persistent/neurologic",
+      "C. Bed rest 2 weeks",
+      "D. Opioids lifelong",
+      "E. Surgery now"
+    ],
+    "answer": "B",
+    "explanation": "Acute sciatica without red flags: conservative 6 weeks. MRI if cauda equina, progressive deficit, cancer/infection suspicion."
+  },
+  {
+    "id": "FM-13",
+    "subject": "FM",
+    "stem": "Known ankylosing spondylitis, sacroiliac pain, acute flare. Effective biologic class if NSAID fails?",
+    "options": [
+      "A. Methotrexate always works in axial disease",
+      "B. TNF-alpha inhibitor (or IL-17) for active axial AS",
+      "C. Cyclosporine first",
+      "D. Prednisolone lifelong",
+      "E. No treatment"
+    ],
+    "answer": "B",
+    "explanation": "Axial AS: NSAIDs + exercise first; TNF/IL-17 inhibitors for high activity. Methotrexate helps peripheral, not axial."
+  },
+  {
+    "id": "FM-14",
+    "subject": "FM",
+    "stem": "Third-trimester bleeding: what most reduces mortality?",
+    "options": [
+      "A. Routine PV exam",
+      "B. Abdominal US for placenta position + resuscitation + Rh + transfusion readiness; avoid PV if praevia suspected",
+      "C. IV fluids only without assessment",
+      "D. Home observation",
+      "E. Vaginal delivery all"
+    ],
+    "answer": "B",
+    "explanation": "Never PV with suspected praevia – can provoke catastrophic bleed. Locate placenta abdominally, cross-match, steroids, C-section plan."
+  },
+  {
+    "id": "FM-15",
+    "subject": "FM",
+    "stem": "Tingling lateral forearm + reduced brachioradialis reflex. Which nerve root?",
+    "options": [
+      "A. T1",
+      "B. C6",
+      "C. L5",
+      "D. S1",
+      "E. C8"
+    ],
+    "answer": "B",
+    "explanation": "C6: thumb/index, lateral forearm, biceps/brachioradialis. Know dermatomes/myotomes for EMREE."
+  },
+  {
+    "id": "FM-16",
+    "subject": "FM",
+    "stem": "Healthy runner requests full-body MRI + antibiotics for viral cold. Best?",
+    "options": [
+      "A. Order all requested",
+      "B. Explain risks/benefits, stewardship, shared decision-making; decline low-value care politely",
+      "C. Prescribe to satisfy",
+      "D. Refuse rudely",
+      "E. Refer to surgery"
+    ],
+    "answer": "B",
+    "explanation": "Professionalism: avoid low-value testing/antibiotics, explain harms (incidentalomas, resistance), offer alternatives."
+  },
+  {
+    "id": "FM-17",
+    "subject": "FM",
+    "stem": "Inter-professional conflict: nurse flags deterioration, junior dismisses. Best?",
+    "options": [
+      "A. Hierarchy wins",
+      "B. Structured handover (SBAR) + speak-up + early-warning score + escalate",
+      "C. Ignore vitals",
+      "D. Blame",
+      "E. No documentation"
+    ],
+    "answer": "B",
+    "explanation": "Patient safety: graded assertiveness, SBAR, rapid response. Hierarchy never overrides safety."
+  },
+  {
+    "id": "FM-18",
+    "subject": "FM",
+    "stem": "Suspected child/spouse/elder abuse with inconsistent story. Duty?",
+    "options": [
+      "A. Confront family aggressively",
+      "B. Private interview + thorough exam + document + mandatory report + safety plan per UAE law",
+      "C. Discharge",
+      "D. No report",
+      "E. Promise absolute secrecy"
+    ],
+    "answer": "B",
+    "explanation": "Abuse: separate interview, body map, photos, report to authorities, admit if unsafe. Confidentiality yields to protection."
+  }
+]

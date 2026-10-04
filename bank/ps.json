@@ -1,0 +1,170 @@
+[
+  {
+    "id": "PS-01",
+    "subject": "PS",
+    "stem": "32-year-old low mood, anhedonia, weight loss, insomnia, guilt 3 weeks + somatic aches. First-line?",
+    "options": [
+      "A. Benzodiazepine lifelong",
+      "B. SSRI (e.g. sertraline) + CBT + suicide-risk assessment + follow-up",
+      "C. Antipsychotic alone",
+      "D. No treatment",
+      "E. St John’s wort only"
+    ],
+    "answer": "B",
+    "explanation": "Moderate-severe depression: SSRI + psychotherapy, safety plan, monitor activation/suicide early. Treat somatic pain within depression."
+  },
+  {
+    "id": "PS-02",
+    "subject": "PS",
+    "stem": "18-year-old binge-eats then vomits, feels overweight, BMI 16.5. Diagnosis?",
+    "options": [
+      "A. Binge-eating disorder",
+      "B. Anorexia nervosa (binge-purge type)",
+      "C. Bulimia nervosa",
+      "D. Normal",
+      "E. Psychosis"
+    ],
+    "answer": "B",
+    "explanation": "Recall: BMI <18.5 + body-image distortion = anorexia even with binge/purge. Bulimia usually normal/overweight. Needs MDT refeeding + psych."
+  },
+  {
+    "id": "PS-03",
+    "subject": "PS",
+    "stem": "Panic attacks, palpitations, catastrophic thoughts, avoids malls. Best long-term?",
+    "options": [
+      "A. Alcohol",
+      "B. SSRI + CBT (exposure) + breathing/relaxation; avoid daily benzos",
+      "C. Beta-blocker alone lifelong",
+      "D. Reassure only",
+      "E. Sedate"
+    ],
+    "answer": "B",
+    "explanation": "Panic/GAD: CBT + SSRI first-line. Benzos only short crisis due to dependence."
+  },
+  {
+    "id": "PS-04",
+    "subject": "PS",
+    "stem": "Intrusive contamination fears + 2-hour washing rituals, knows excessive. Diagnosis and best therapy?",
+    "options": [
+      "A. Psychosis – antipsychotic",
+      "B. OCD – SSRI (high dose) + exposure-response prevention",
+      "C. Phobia – surgery",
+      "D. Normal",
+      "E. Depression only"
+    ],
+    "answer": "B",
+    "explanation": "OCD: obsessions + compulsions + insight. ERP + SSRI/clomipramine; augment if resistant."
+  },
+  {
+    "id": "PS-05",
+    "subject": "PS",
+    "stem": "Nightmares, flashbacks after crash, hyperarousal, avoidance 2 months. Best next step?",
+    "options": [
+      "A. Debrief once only",
+      "B. Trauma-focused CBT/EMDR + SSRI if needed; screen suicide/substance",
+      "C. Benzodiazepine chronic",
+      "D. No care",
+      "E. Hypnosis only"
+    ],
+    "answer": "B",
+    "explanation": "PTSD >1 month: trauma-focused therapy first; meds adjunct. Early support, not single debrief."
+  },
+  {
+    "id": "PS-06",
+    "subject": "PS",
+    "stem": "22-year-old deliberate self-harm, says will repeat. Best immediate action?",
+    "options": [
+      "A. Discharge alone",
+      "B. Risk assessment + safety planning + collateral + psychiatry referral/admit if high risk; remove means",
+      "C. Scold",
+      "D. No documentation",
+      "E. Promise secrecy"
+    ],
+    "answer": "B",
+    "explanation": "Self-harm: empathic risk stratification, protective factors, means restriction, follow-up <48h, involve family with consent unless imminent risk."
+  },
+  {
+    "id": "PS-07",
+    "subject": "PS",
+    "stem": "8-year-old inattentive, hyperactive, impairing school/home >6 mo. First-line after behavioural?",
+    "options": [
+      "A. Sedating antihistamine",
+      "B. Methylphenidate/atomoxetine + parent training + school plan; monitor growth/BP",
+      "C. Antipsychotic first",
+      "D. No school support",
+      "E. Punishment only"
+    ],
+    "answer": "B",
+    "explanation": "ADHD: confirm pervasiveness, exclude vision/hearing/thyroid/sleep; stimulants effective with monitoring."
+  },
+  {
+    "id": "PS-08",
+    "subject": "PS",
+    "stem": "Chronic insomnia, daytime benzodiazepine request. Best?",
+    "options": [
+      "A. Long-term zolpidem",
+      "B. CBT-I + sleep hygiene + taper benzos; short hypnotic only if needed",
+      "C. Alcohol",
+      "D. Caffeine at night",
+      "E. No advice"
+    ],
+    "answer": "B",
+    "explanation": "Insomnia: CBT-I beats pills. Taper benzos (dependence/rebound), treat apnea/depression/RLS."
+  },
+  {
+    "id": "PS-09",
+    "subject": "PS",
+    "stem": "Patient on lithium: what to monitor regularly?",
+    "options": [
+      "A. Liver only",
+      "B. Renal function + thyroid + lithium levels + hydration + interactions (NSAID/diuretic)",
+      "C. Lung function",
+      "D. Cardiac enzymes only",
+      "E. No monitoring"
+    ],
+    "answer": "B",
+    "explanation": "Recall: lithium renally cleared, narrow index → nephrogenic DI, hypothyroidism, toxicity with dehydration/NSAIDs. Check levels 12h post-dose."
+  },
+  {
+    "id": "PS-10",
+    "subject": "PS",
+    "stem": "Triad incontinence + dementia + gait apraxia, ventriculomegaly + periventricular hyperintensity. Diagnosis?",
+    "options": [
+      "A. Alzheimer only",
+      "B. Normal-pressure hydrocephalus – refer neurosurgery (tap test/shunt if responsive)",
+      "C. UTI only",
+      "D. Parkinson only",
+      "E. Normal ageing"
+    ],
+    "answer": "B",
+    "explanation": "NPH: wet-wobbly-wacky. Tap test predicts shunt response. Rule out obstructive/vascular."
+  },
+  {
+    "id": "PS-11",
+    "subject": "PS",
+    "stem": "2 years isolated, poor hygiene, flat affect, no friends, no positive psychosis. Most likely personality pattern?",
+    "options": [
+      "A. Schizoid personality pattern (lifelong detachment, restricted affect)",
+      "B. Major depression only",
+      "C. Mania",
+      "D. Dementia",
+      "E. No concern"
+    ],
+    "answer": "B",
+    "explanation": "Recall: persistent social detachment + restricted affect without psychosis = schizoid pattern; monitor for schizophrenia prodrome, support ADLs."
+  },
+  {
+    "id": "PS-12",
+    "subject": "PS",
+    "stem": "Elevated mood, reduced sleep, grandiosity, overspending 1 week, impaired function. Best acute?",
+    "options": [
+      "A. Antidepressant alone",
+      "B. Mood stabiliser/antipsychotic (e.g. valproate/olanzapine) + safety + stop antidepressant; bipolar mania workup",
+      "C. Stimulant",
+      "D. Discharge alone",
+      "E. Benzodiazepine alone lifelong"
+    ],
+    "answer": "B",
+    "explanation": "Mania: stop pro-manic agents, stabilise, protect finances/safety, psychoeducation + lithium/valproate maintenance."
+  }
+]

@@ -1,0 +1,170 @@
+[
+  {
+    "id": "PH-01",
+    "subject": "PH",
+    "stem": "Two groups: one previously used omega-3 (exposed), one never, followed forward for events. Study type?",
+    "options": [
+      "A. Case-control",
+      "B. Cohort study",
+      "C. Cross-sectional",
+      "D. Case report",
+      "E. RCT"
+    ],
+    "answer": "B",
+    "explanation": "Exposed vs non-exposed followed forward = cohort. Remember: cohort = exposure → outcome; case-control = outcome → exposure."
+  },
+  {
+    "id": "PH-02",
+    "subject": "PH",
+    "stem": "Depression test: TP 75, FN 25. Sensitivity?",
+    "options": [
+      "A. 25%",
+      "B. 75% – TP/(TP+FN)",
+      "C. 50%",
+      "D. 100%",
+      "E. Cannot calculate"
+    ],
+    "answer": "B",
+    "explanation": "Sensitivity = TP/(TP+FN) = 75/100 = 75%. Specificity = TN/(TN+FP)."
+  },
+  {
+    "id": "PH-03",
+    "subject": "PH",
+    "stem": "Regression intercept for gestation = 37.9 weeks. Meaning?",
+    "options": [
+      "A. Median gestation",
+      "B. Mean gestation when all X=0",
+      "C. Strong association",
+      "D. No interpretation",
+      "E. Causal proof"
+    ],
+    "answer": "B",
+    "explanation": "Intercept = predicted Y when all predictors zero. Check centring – may be non-physiological, just model anchor."
+  },
+  {
+    "id": "PH-04",
+    "subject": "PH",
+    "stem": "Test detects disease earlier but death age unchanged. Bias?",
+    "options": [
+      "A. Lead-time bias",
+      "B. Recall bias",
+      "C. Selection bias only",
+      "D. Confounding",
+      "E. No bias"
+    ],
+    "answer": "A",
+    "explanation": "Screening survival illusion: earlier diagnosis without delayed death = lead-time. Length-time is slow-growing cases over-represented."
+  },
+  {
+    "id": "PH-05",
+    "subject": "PH",
+    "stem": "Correlation between dose and weight gain (continuous). Measure?",
+    "options": [
+      "A. Odds ratio",
+      "B. Pearson correlation / linear regression",
+      "C. Chi-square only",
+      "D. Case report",
+      "E. Sensitivity"
+    ],
+    "answer": "B",
+    "explanation": "Two continuous → Pearson r / linear regression. OR/RR for binary outcomes; chi-square for categorical."
+  },
+  {
+    "id": "PH-06",
+    "subject": "PH",
+    "stem": "Outbreak: 40 ill of 200 exposed. Attack rate?",
+    "options": [
+      "A. 5%",
+      "B. 20% – 40/200",
+      "C. 50%",
+      "D. 100%",
+      "E. 0%"
+    ],
+    "answer": "B",
+    "explanation": "Attack rate = ill/exposed during outbreak. Guide control + source search."
+  },
+  {
+    "id": "PH-07",
+    "subject": "PH",
+    "stem": "Herd immunity threshold for measles (~95%) rationale?",
+    "options": [
+      "A. Protects unvaccinated by breaking chains when coverage high",
+      "B. Treats active cases",
+      "C. No need to vaccinate",
+      "D. Only protects vaccinated",
+      "E. Increases spread"
+    ],
+    "answer": "A",
+    "explanation": "High coverage stops transmission, shielding infants/immunocompromised. Measles needs ~95% due to R0 12–18."
+  },
+  {
+    "id": "PH-08",
+    "subject": "PH",
+    "stem": "Child up-to-date except MMR at 14 months in endemic area. Advice?",
+    "options": [
+      "A. Skip MMR forever",
+      "B. Give MMR now per schedule; no extra later beyond routine second dose – explain timing ≥12 mo for maternal antibody waning",
+      "C. Daily MMR",
+      "D. Wait until 10 y",
+      "E. Give before 6 mo routinely"
+    ],
+    "answer": "B",
+    "explanation": "MMR ≥12 mo (maternal antibodies wane). Give now + second at 4–6y. Early dose (<12 mo) during outbreak doesn't count."
+  },
+  {
+    "id": "PH-09",
+    "subject": "PH",
+    "stem": "What is the best first-line smoking-cessation help?",
+    "options": [
+      "A. Willpower scolding",
+      "B. Behavioural counselling + NRT/varenicline/cytisine per eligibility",
+      "C. E-cigarette for teens",
+      "D. No help",
+      "E. Hypnosis only"
+    ],
+    "answer": "B",
+    "explanation": "Combine behavioural + pharmacotherapy doubles quit rates. Screen, advise, assess, assist, arrange."
+  },
+  {
+    "id": "PH-10",
+    "subject": "PH",
+    "stem": "How often should diabetic retinopathy screening occur?",
+    "options": [
+      "A. Never",
+      "B. Annual dilated eye exam from diagnosis (T2) / 5 years after diagnosis (T1); urgent referral if blurred vision with dot-blot haemorrhages (macular oedema)",
+      "C. Only if blind",
+      "D. Self-check",
+      "E. CT head"
+    ],
+    "answer": "B",
+    "explanation": "Recall-linked: dot-blot + gradual blur with clear vitreous/normal IOP → diabetic maculopathy. Annual screen prevents blindness."
+  },
+  {
+    "id": "PH-11",
+    "subject": "PH",
+    "stem": "Confounding example: coffee–MI confounded by smoking. How to handle it at the design stage?",
+    "options": [
+      "A. Randomisation/matching/restriction",
+      "B. Ignore",
+      "C. More bias",
+      "D. Stop study",
+      "E. P-hacking"
+    ],
+    "answer": "A",
+    "explanation": "Design: randomise/match/restrict; Analysis: stratify/adjust. Confounder linked to exposure + outcome, not on pathway."
+  },
+  {
+    "id": "PH-12",
+    "subject": "PH",
+    "stem": "Travel medicine: traveller’s diarrhoea prevention?",
+    "options": [
+      "A. Tap water + street food always",
+      "B. Safe water/food + hand hygiene + standby ORS/azithromycin per destination; vaccines (hep A/typhoid) as indicated",
+      "C. Antibiotics daily all",
+      "D. No precaution",
+      "E. Raw milk"
+    ],
+    "answer": "B",
+    "explanation": "Food/water precautions + vaccines + ORS plan. Prophylactic antibiotics not routine except special groups."
+  }
+]

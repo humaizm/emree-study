@@ -1,0 +1,71 @@
+{
+  "name": "EMREE Study Ledger — Question Bank",
+  "version": "1.0.0",
+  "updated": "2026-10-04",
+  "total": 120,
+  "subjects": [
+    {
+      "code": "IM",
+      "title": "Internal Medicine & Emergency",
+      "file": "bank/im.json",
+      "weight_pct": 20,
+      "qprefix": "IM",
+      "blurb": "cardiology, respiratory, endocrine, renal, haematology, rheumatology, infection, emergency, dermatology",
+      "count": 24
+    },
+    {
+      "code": "OB",
+      "title": "Obstetrics & Gynaecology",
+      "file": "bank/ob.json",
+      "weight_pct": 15,
+      "qprefix": "OB",
+      "blurb": "ectopic, torsion, praevia, preeclampsia, PPH, PPROM, fibroid, endometriosis, screening",
+      "count": 18
+    },
+    {
+      "code": "PD",
+      "title": "Paediatrics",
+      "file": "bank/pd.json",
+      "weight_pct": 15,
+      "qprefix": "PD",
+      "blurb": "pyloric, Hirschsprung, Rh HDN, sepsis, seizures, asthma, vaccines, growth",
+      "count": 18
+    },
+    {
+      "code": "SG",
+      "title": "Surgery, Ortho & Trauma",
+      "file": "bank/sg.json",
+      "weight_pct": 15,
+      "qprefix": "SG",
+      "blurb": "appendicitis, cholecystitis, obstruction, hernia, burns, compartments, torsion, ATLS",
+      "count": 18
+    },
+    {
+      "code": "FM",
+      "title": "Family Medicine, Ethics & Safety",
+      "file": "bank/fm.json",
+      "weight_pct": 15,
+      "qprefix": "FM",
+      "blurb": "consent, confidentiality, safety, breaking bad news, orthostasis, back pain",
+      "count": 18
+    },
+    {
+      "code": "PS",
+      "title": "Psychiatry",
+      "file": "bank/ps.json",
+      "weight_pct": 10,
+      "qprefix": "PS",
+      "blurb": "depression, eating disorders, anxiety, OCD, PTSD, ADHD, lithium, NPH",
+      "count": 12
+    },
+    {
+      "code": "PH",
+      "title": "Public Health & Biostatistics",
+      "file": "bank/ph.json",
+      "weight_pct": 10,
+      "qprefix": "PH",
+      "blurb": "cohort, sensitivity, bias, attack rate, herd immunity, screening",
+      "count": 12
+    }
+  ]
+}

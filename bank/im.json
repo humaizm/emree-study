@@ -1,0 +1,338 @@
+[
+  {
+    "id": "IM-01",
+    "subject": "IM",
+    "stem": "45-year-old man has sudden crushing retrosternal pain radiating to left arm, sweaty, ECG shows ST elevation in V2–V4. Onset 90 min ago. Most appropriate next step?",
+    "options": [
+      "A. Oral aspirin only and observe",
+      "B. Thrombolysis only if troponin negative",
+      "C. Immediate primary percutaneous coronary intervention",
+      "D. Urgent exercise stress test",
+      "E. Aortic CT first"
+    ],
+    "answer": "C",
+    "explanation": "Anterior STEMI <12h: primary PCI is standard if available; give dual antiplatelet + heparin en route. Time is muscle."
+  },
+  {
+    "id": "IM-02",
+    "subject": "IM",
+    "stem": "68-year-old with progressive dyspnoea, orthopnoea, bilateral crackles, S3 gallop, ankle oedema. Echo EF 32%. First-line long-term therapy that improves mortality?",
+    "options": [
+      "A. Loop diuretic alone",
+      "B. ACE inhibitor + evidence-based beta-blocker + SGLT2 inhibitor",
+      "C. Calcium-channel blocker",
+      "D. Digoxin alone",
+      "E. NSAID for breathlessness"
+    ],
+    "answer": "B",
+    "explanation": "HFrEF guideline therapy: ACEi/ARNI + beta-blocker (bisoprolol/carvedilol/metoprolol succinate) + MRA + SGLT2i. Diuretics relieve congestion only."
+  },
+  {
+    "id": "IM-03",
+    "subject": "IM",
+    "stem": "72-year-old has irregularly irregular pulse, no P waves, variable QRS. CHA2DS2-VASc 4. Management?",
+    "options": [
+      "A. Aspirin alone",
+      "B. Rate control (beta-blocker) + oral anticoagulation",
+      "C. Stop all drugs",
+      "D. Immediate cardioversion without anticoagulation",
+      "E. Pacemaker only"
+    ],
+    "answer": "B",
+    "explanation": "Atrial fibrillation with high stroke risk needs rate/rhythm control plus anticoagulation (DOAC/warfarin), not aspirin alone."
+  },
+  {
+    "id": "IM-04",
+    "subject": "IM",
+    "stem": "Man develops an itchy, well-demarcated scaly rash confined to the skin under his belt buckle. No vesicles elsewhere, no fever. Most likely diagnosis?",
+    "options": [
+      "A. Cellulitis",
+      "B. Allergic contact dermatitis (nickel)",
+      "C. Psoriasis",
+      "D. Tinea corporis",
+      "E. Scabies"
+    ],
+    "answer": "B",
+    "explanation": "Recall: rash limited to the contact site (belt buckle → nickel) = allergic contact dermatitis. Confirm with patch testing; avoid the allergen + topical steroid/emollient."
+  },
+  {
+    "id": "IM-05",
+    "subject": "IM",
+    "stem": "64-year-old smoker with barrel chest, chronic productive cough, FEV1/FVC 0.58, FEV1 45% predicted. Exacerbation with increased sputum purulence. Best initial approach?",
+    "options": [
+      "A. Home oxygen 8 L/min",
+      "B. Short-acting bronchodilators + systemic steroids + antibiotics, target SpO2 88–92%",
+      "C. High-dose sedative",
+      "D. Bed rest only",
+      "E. Stop all inhalers"
+    ],
+    "answer": "B",
+    "explanation": "COPD exacerbation: bronchodilators, steroids, antibiotics if purulent change, controlled oxygen 88–92% to avoid CO2 retention."
+  },
+  {
+    "id": "IM-06",
+    "subject": "IM",
+    "stem": "70-year-old man, day 10 post-op, first mobilisation: sudden unilateral pleuritic chest pain, dyspnoea, diaphoresis, afebrile, self-resolved. Most likely?",
+    "options": [
+      "A. Atelectasis",
+      "B. Pulmonary embolism",
+      "C. Bronchiectasis",
+      "D. Pneumothorax with fever",
+      "E. Musculoskeletal pain"
+    ],
+    "answer": "B",
+    "explanation": "Classic recall pattern: post-op immobilisation + pleuritic pain + dyspnoea = PE until proven otherwise. Needs CT pulmonary angiography + heparin."
+  },
+  {
+    "id": "IM-07",
+    "subject": "IM",
+    "stem": "Woman has chronic scaly plaques on legs and axillae covering ~10% of body surface; new lesions appear at scratch sites (Koebner phenomenon). No joint pain. Best initial treatment?",
+    "options": [
+      "A. Topical mometasone + oral prednisolone",
+      "B. Potent topical steroid + vitamin D analogue (e.g. clobetasol + calcipotriol), consider phototherapy",
+      "C. Emollients alone",
+      "D. Oral ciclosporin immediately",
+      "E. No treatment"
+    ],
+    "answer": "B",
+    "explanation": "Recall: moderate plaque psoriasis (~10% BSA) + Koebner → topical steroid + vitamin D analogue first-line; phototherapy if extensive. Reserve systemic agents for severe/refractory disease; avoid systemic steroids alone (rebound)."
+  },
+  {
+    "id": "IM-08",
+    "subject": "IM",
+    "stem": "30-year-old with 3-week night sweats, weight loss, upper-lobe cavitary lesion. Next step?",
+    "options": [
+      "A. Inhaled steroid",
+      "B. Sputum AFB smear/culture + GeneXpert, isolate, start RIPE if TB confirmed",
+      "C. Antacid",
+      "D. Reassure",
+      "E. Lobectomy immediately"
+    ],
+    "answer": "B",
+    "explanation": "Upper-lobe cavitation + chronic B symptoms = TB. Confirm microbiologically, isolate, RIPE regimen per guidelines."
+  },
+  {
+    "id": "IM-09",
+    "subject": "IM",
+    "stem": "19-year-old diabetic with polyuria, vomiting, Kussmaul breathing, glucose 28 mmol/L, ketones strongly positive, pH 7.18. First management?",
+    "options": [
+      "A. Oral hypoglycaemic and discharge",
+      "B. IV isotonic fluids + IV insulin infusion + potassium/electrolyte monitoring",
+      "C. Bicarbonate alone",
+      "D. Fluid restriction",
+      "E. High-dose glucose bolus"
+    ],
+    "answer": "B",
+    "explanation": "DKA: fluids, insulin, correct K+, treat precipitant (infection). Never oral agents alone."
+  },
+  {
+    "id": "IM-10",
+    "subject": "IM",
+    "stem": "Patient on sulfonylurea, dose increased, lost 4 kg, lifestyle improved, but HbA1c still 9%. Best next step?",
+    "options": [
+      "A. Double sulfonylurea again",
+      "B. Stop sulfonylurea and start insulin (add ± metformin)",
+      "C. Add NSAID",
+      "D. Stop all diabetes drugs",
+      "E. Wait 2 years"
+    ],
+    "answer": "B",
+    "explanation": "Recall pattern: SU failure with HbA1c ≥9% + symptoms/weight loss despite adherence = insulin needed. Don't endlessly up-titrate SU."
+  },
+  {
+    "id": "IM-11",
+    "subject": "IM",
+    "stem": "Obese type 2 diabetic wants to lose weight and control glucose. Which class most helps weight loss?",
+    "options": [
+      "A. Sulfonylurea",
+      "B. Insulin glargine",
+      "C. GLP-1 receptor agonist (e.g. semaglutide)",
+      "D. Pioglitazone",
+      "E. Meglitinide"
+    ],
+    "answer": "C",
+    "explanation": "Recall: GLP-1 RAs reduce weight + HbA1c. SU/insulin/TZDs tend to increase weight."
+  },
+  {
+    "id": "IM-12",
+    "subject": "IM",
+    "stem": "Pregnant woman with Hashimoto on levothyroxine 100 mcg, now TSH high, free T4 normal with hypothyroid symptoms. Next step?",
+    "options": [
+      "A. Reassure – pregnancy causes this",
+      "B. Increase levothyroxine dose by ~25–30% and recheck TSH",
+      "C. Stop thyroxine",
+      "D. Urgent thyroidectomy",
+      "E. Radioiodine"
+    ],
+    "answer": "B",
+    "explanation": "Pregnancy increases thyroxine needs. High TSH = under-replaced; increase dose. Radioiodine/FNA not indicated here."
+  },
+  {
+    "id": "IM-13",
+    "subject": "IM",
+    "stem": "28-year-old woman with tremor, weight loss, heat intolerance, exophthalmos, diffuse goitre. Best initial treatment?",
+    "options": [
+      "A. Levothyroxine",
+      "B. Beta-blocker for symptoms + carbimazole (antithyroid drug)",
+      "C. Calcium only",
+      "D. Insulin",
+      "E. Stop all drugs"
+    ],
+    "answer": "B",
+    "explanation": "Graves hyperthyroidism: antithyroid (carbimazole/methimazole or PTU in 1st trimester) + propranolol for adrenergic symptoms."
+  },
+  {
+    "id": "IM-14",
+    "subject": "IM",
+    "stem": "65-year-old dehydrated after NSAID + diarrhoea: creatinine doubled, K+ 5.8, low urine output. Most likely and first action?",
+    "options": [
+      "A. Pre-renal/AKI – stop nephrotoxin, give isotonic fluids, review meds",
+      "B. Normal – discharge",
+      "C. Start high-dose NSAID",
+      "D. Immediate dialysis in all cases",
+      "E. Fluid restriction only"
+    ],
+    "answer": "A",
+    "explanation": "AKI from hypovolaemia + NSAID: stop precipitant, volume resuscitate, monitor UO/electrolytes. Dialysis only for refractory indications."
+  },
+  {
+    "id": "IM-15",
+    "subject": "IM",
+    "stem": "ECG shows tall peaked T waves, K+ 6.8 mmol/L. First stabilising drug?",
+    "options": [
+      "A. Oral calcium tablet next week",
+      "B. IV calcium (gluconate/chloride) + insulin-glucose + shifting measures",
+      "C. Digoxin",
+      "D. Beta-agonist tablet only",
+      "E. Stop ECG monitoring"
+    ],
+    "answer": "B",
+    "explanation": "Hyperkalaemia with ECG changes: calcium stabilises myocardium, then insulin-glucose + bicarbonate/salbutamol + binders/dialysis as needed."
+  },
+  {
+    "id": "IM-16",
+    "subject": "IM",
+    "stem": "Young woman fatigue, pallor, koilonychia, ferritin 6 ng/mL, microcytic anaemia. Best treatment + workup?",
+    "options": [
+      "A. Oral ferrous sulfate + investigate blood loss / hookworm / diet / GI source",
+      "B. Vitamin B12 only",
+      "C. Transfuse all cases",
+      "D. Stop iron",
+      "E. Steroids"
+    ],
+    "answer": "A",
+    "explanation": "Iron deficiency: replace iron + find cause (menorrhagia, GI loss, parasites, diet). Hookworm is classic EMREE-linked cause."
+  },
+  {
+    "id": "IM-17",
+    "subject": "IM",
+    "stem": "22-year-old with sickle-cell disease: severe limb/back pain, no fever, chest clear. Management of vaso-occlusive crisis?",
+    "options": [
+      "A. Fluids + adequate analgesia + oxygen if hypoxic + treat trigger",
+      "B. Ice bath only",
+      "C. Antibiotics in all cases",
+      "D. Discharge without analgesia",
+      "E. High-dose aspirin only"
+    ],
+    "answer": "A",
+    "explanation": "VOC: hydration, stepwise analgesia, oxygen, rest, incentive spirometry, screen for ACS/infection."
+  },
+  {
+    "id": "IM-18",
+    "subject": "IM",
+    "stem": "70-year-old sudden right hemiparesis + aphasia, onset 2 h ago, CT shows no bleed. Best next step?",
+    "options": [
+      "A. Aspirin only and observe 1 month",
+      "B. IV thrombolysis if eligible + stroke unit + urgent workup",
+      "C. Lumbar puncture first",
+      "D. Bed rest 1 week",
+      "E. Carotid massage"
+    ],
+    "answer": "B",
+    "explanation": "Acute ischaemic stroke <4.5h without bleed: thrombolysis if eligible, plus stroke-unit care, statins, workup. Time-critical."
+  },
+  {
+    "id": "IM-19",
+    "subject": "IM",
+    "stem": "Generalised tonic-clonic seizure lasting 6 min in ED. First drug?",
+    "options": [
+      "A. Oral paracetamol",
+      "B. IV lorazepam/diazepam",
+      "C. Insulin",
+      "D. Flumazenil routinely",
+      "E. No drug"
+    ],
+    "answer": "B",
+    "explanation": "Status protocol: benzodiazepine first (lorazepam), then levetiracetam/phenytoin if persists, ABCs + glucose + cause search."
+  },
+  {
+    "id": "IM-20",
+    "subject": "IM",
+    "stem": "Fever, neck stiffness, photophobia, Kernig positive. After blood cultures, best immediate action?",
+    "options": [
+      "A. Wait for CT before antibiotics 12 h",
+      "B. Empirical ceftriaxone (± vancomycin/acyclovir per age) + dexamethasone, then LP",
+      "C. NSAID only",
+      "D. Discharge",
+      "E. Oral amoxicillin only"
+    ],
+    "answer": "B",
+    "explanation": "Suspected bacterial meningitis: don't delay antibiotics for LP/CT. Cultures → immediate empirical antibiotics."
+  },
+  {
+    "id": "IM-21",
+    "subject": "IM",
+    "stem": "Hypotensive, tachycardic, lactate 4.5, suspected sepsis. Best initial bundle?",
+    "options": [
+      "A. Broad-spectrum antibiotics within 1 h + 30 mL/kg crystalloids + lactate monitoring",
+      "B. Steroids only",
+      "C. Fluids 100 mL only",
+      "D. No antibiotics",
+      "E. Vasopressor without fluids"
+    ],
+    "answer": "A",
+    "explanation": "Sepsis-induced hypoperfusion: early antibiotics + aggressive fluids + reassess, then vasopressors if MAP <65."
+  },
+  {
+    "id": "IM-22",
+    "subject": "IM",
+    "stem": "24-year-old woman malar rash, arthralgia, oral ulcers, ANA positive, low C3. Most likely and steroid-sparing drug?",
+    "options": [
+      "A. SLE – hydroxychloroquine as backbone (+ steroids/immunosuppressant per severity)",
+      "B. Psoriasis – retinoid only",
+      "C. Gout – allopurinol",
+      "D. Cellulitis – cephalexin",
+      "E. Normal"
+    ],
+    "answer": "A",
+    "explanation": "SLE young woman + malar rash + ANA: hydroxychloroquine for all unless contraindicated; add steroids/immunosuppression for organ disease."
+  },
+  {
+    "id": "IM-23",
+    "subject": "IM",
+    "stem": "45-year-old symmetric small-joint polyarthritis, morning stiffness >1 h, anti-CCP positive. First DMARD?",
+    "options": [
+      "A. Methotrexate (with folate) if no contraindication",
+      "B. Opioid lifelong",
+      "C. Antibiotic",
+      "D. No treatment",
+      "E. Surgery first"
+    ],
+    "answer": "A",
+    "explanation": "RA: early methotrexate + short steroids bridge, then escalate to biologics if target not met."
+  },
+  {
+    "id": "IM-24",
+    "subject": "IM",
+    "stem": "Acute hot swollen first MTP joint, hyperuricaemia, needle crystals negatively birefringent. Acute treatment?",
+    "options": [
+      "A. Allopurinol during acute attack alone",
+      "B. NSAID/colchicine/steroid for acute attack; start urate-lowering later",
+      "C. Stop fluids",
+      "D. Antibiotic",
+      "E. Bed rest only"
+    ],
+    "answer": "B",
+    "explanation": "Gout flare: anti-inflammatory now; don't start allopurinol alone acutely. Start ULT after flare settles with prophylaxis."
+  }
+]

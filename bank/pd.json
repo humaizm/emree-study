@@ -1,0 +1,254 @@
+[
+  {
+    "id": "PD-01",
+    "subject": "PD",
+    "stem": "6-week-old persistent non-bilious vomiting, hungry, wants to feed, K+ 3.1, olive mass. Diagnosis?",
+    "options": [
+      "A. Duodenal atresia",
+      "B. Hypertrophic pyloric stenosis",
+      "C. Malrotation with volvulus",
+      "D. Intussusception",
+      "E. Hirschsprung"
+    ],
+    "answer": "B",
+    "explanation": "Non-bilious projectile vomiting 3–8w + hungry + olive + hypochloraemic alkalosis = pyloric stenosis. US confirms; correct electrolytes then pyloromyotomy."
+  },
+  {
+    "id": "PD-02",
+    "subject": "PD",
+    "stem": "Term neonate day 3: abdominal distension, delayed meconium day 3, no stool after, dilated loops on X-ray. Diagnosis?",
+    "options": [
+      "A. Volvulus",
+      "B. Intussusception",
+      "C. Hirschsprung disease",
+      "D. Appendicitis",
+      "E. Normal"
+    ],
+    "answer": "C",
+    "explanation": "Delayed meconium >48h + distension + dilated loops = Hirschsprung. Biopsy (aganglionosis); contrast enema transition zone."
+  },
+  {
+    "id": "PD-03",
+    "subject": "PD",
+    "stem": "Mother A-negative, no anti-D last pregnancy, husband unknown. Term boy severe jaundice within hours. Most likely?",
+    "options": [
+      "A. Breast-milk jaundice day 5",
+      "B. Rh haemolytic disease from alloimmunisation",
+      "C. Biliary atresia",
+      "D. Normal",
+      "E. Hypothyroidism"
+    ],
+    "answer": "B",
+    "explanation": "Hours-after-birth severe jaundice + Rh-negative mother without prophylaxis = Rh HDN. Check DAT, bilirubin, Hb; phototherapy/exchange + IVIG per severity."
+  },
+  {
+    "id": "PD-04",
+    "subject": "PD",
+    "stem": "Macrosomic infant of diabetic mother, glucose 3.2 mmol/L, vigorous. Management?",
+    "options": [
+      "A. 10% dextrose IV bolus immediately in all",
+      "B. Encourage early breastfeeding + close glucose monitoring (≥2.5 threshold per recall protocol)",
+      "C. No feeding",
+      "D. Insulin",
+      "E. Discharge"
+    ],
+    "answer": "B",
+    "explanation": "Asymptomatic 3.2 (>2.5) vigorous term: feed early + monitor. IV dextrose if <2.0–2.5, symptomatic, or persistent low."
+  },
+  {
+    "id": "PD-05",
+    "subject": "PD",
+    "stem": "3-day breastfed term: lethargic, poor feeding, new jaundice, T 35.4, liver 2 cm. Most likely?",
+    "options": [
+      "A. Rh isoimmunisation only",
+      "B. Inadequate milk only",
+      "C. Biliary obstruction",
+      "D. Neonatal sepsis",
+      "E. Normal"
+    ],
+    "answer": "D",
+    "explanation": "Hypothermia + lethargy + poor feeding + jaundice = sepsis until proven otherwise. Cultures, antibiotics, glucose, bilirubin workup urgently."
+  },
+  {
+    "id": "PD-06",
+    "subject": "PD",
+    "stem": "18-month febrile seizure <5 min, generalised, quick recovery. Advice?",
+    "options": [
+      "A. Long-term phenobarbital for all",
+      "B. Reassure: simple febrile seizure usually benign; antipyretics, safety-net, no routine AED/EEG",
+      "C. Brain surgery",
+      "D. No follow-up",
+      "E. Lumbar puncture all"
+    ],
+    "answer": "B",
+    "explanation": "Simple febrile seizure 6mo–5y: brief, generalised, once/24h, full recovery. Exclude meningitis by age/clues; educate, no chronic AED."
+  },
+  {
+    "id": "PD-07",
+    "subject": "PD",
+    "stem": "8-month winter wheeze, crackles, rhinorrhoea, RSV positive, mild distress. Best care?",
+    "options": [
+      "A. High-dose amoxicillin",
+      "B. Supportive: oxygen if needed, fluids, suction; no routine bronchodilator/steroid",
+      "C. Adult COPD inhaler high dose",
+      "D. Immediate intubation all",
+      "E. Antihistamine only"
+    ],
+    "answer": "B",
+    "explanation": "Bronchiolitis is viral supportive care. Antibiotics/steroids not routine unless bacterial superinfection."
+  },
+  {
+    "id": "PD-08",
+    "subject": "PD",
+    "stem": "7-year-old recurrent wheeze responsive to salbutamol, atopy. Best controller?",
+    "options": [
+      "A. Daily low-dose ICS ± LTRA; action plan + technique check",
+      "B. Oral steroid lifelong",
+      "C. Antibiotic",
+      "D. No controller",
+      "E. Sedative"
+    ],
+    "answer": "A",
+    "explanation": "Childhood asthma: ICS backbone, step-up per control, spacer technique, trigger avoidance."
+  },
+  {
+    "id": "PD-09",
+    "subject": "PD",
+    "stem": "2-year-old watery diarrhoea, some dehydration, no blood. First therapy?",
+    "options": [
+      "A. IV antibiotics all",
+      "B. Low-osmolarity ORS + zinc + early feeding",
+      "C. Loperamide",
+      "D. Stop feeds 1 week",
+      "E. Steroids"
+    ],
+    "answer": "B",
+    "explanation": "Viral gastroenteritis: ORS is life-saving; zinc reduces duration; continue feeds; antibiotics only for cholera/shigella/amoeba per protocol."
+  },
+  {
+    "id": "PD-10",
+    "subject": "PD",
+    "stem": "5-year-old periorbital + leg oedema, heavy proteinuria, albumin low, cholesterol high. Diagnosis and first-line drug?",
+    "options": [
+      "A. Nephritic – restrict all",
+      "B. Nephrotic (minimal change) – oral prednisolone",
+      "C. UTI – nitrofurantoin",
+      "D. AKI – dialysis",
+      "E. Normal"
+    ],
+    "answer": "B",
+    "explanation": "Nephrotic triad + hyperlipidaemia: minimal-change commonest; steroids first-line; monitor relapse, vaccinate, salt management."
+  },
+  {
+    "id": "PD-11",
+    "subject": "PD",
+    "stem": "Girl iron-deficiency anaemia. Which parasite classically causes it?",
+    "options": [
+      "A. Pinworm",
+      "B. Fish tapeworm (B12)",
+      "C. Hookworm (chronic intestinal blood loss)",
+      "D. Pig tapeworm only",
+      "E. None"
+    ],
+    "answer": "C",
+    "explanation": "Hookworm sucks blood → IDA. Fish tapeworm → B12 deficiency. Pinworm → perianal itch."
+  },
+  {
+    "id": "PD-12",
+    "subject": "PD",
+    "stem": "Mode of inheritance of beta-thalassaemia major?",
+    "options": [
+      "A. Autosomal dominant",
+      "B. Autosomal recessive",
+      "C. X-linked recessive",
+      "D. Mitochondrial",
+      "E. Sporadic only"
+    ],
+    "answer": "B",
+    "explanation": "Beta-thal major needs two mutated HBB alleles – AR. Counselling + premarital screening crucial in region."
+  },
+  {
+    "id": "PD-13",
+    "subject": "PD",
+    "stem": "Child with VP shunt since age 3 now febrile. Best temperature method + concern?",
+    "options": [
+      "A. Rectal probing of shunt",
+      "B. Avoid rectal thermometry; use axillary/tympanic/oral per age + evaluate shunt infection urgently",
+      "C. No temp needed",
+      "D. Bladder probe",
+      "E. Forehead only definitive"
+    ],
+    "answer": "B",
+    "explanation": "Fever + VP shunt = shunt infection until excluded. Use non-invasive thermometry; cultures, bloods, neurosurgery review – don't delay."
+  },
+  {
+    "id": "PD-14",
+    "subject": "PD",
+    "stem": "14-month boy born 8 weeks preterm: says baba/mama, walks unassisted, can't turn pages. Action?",
+    "options": [
+      "A. Label autism immediately",
+      "B. Correct for gestational age + assess milestones – likely normal; reassure + surveillance",
+      "C. Psychiatry referral only",
+      "D. Hearing test never",
+      "E. Ignore"
+    ],
+    "answer": "B",
+    "explanation": "Correct age = 12 months: walking + 2 words is on track. Preterms need corrected-age assessment + hearing/vision screen + follow-up."
+  },
+  {
+    "id": "PD-15",
+    "subject": "PD",
+    "stem": "4-year-old fever, ear pain, rhinorrhoea, cervical nodes, mobile eardrum. Management if mild?",
+    "options": [
+      "A. Immediate grommets",
+      "B. Symptomatic paracetamol + watchful waiting 48–72h; amoxicillin if severe/persistent (watchful-waiting criteria)",
+      "C. Decongestant only",
+      "D. IV ceftriaxone all",
+      "E. Steroid only"
+    ],
+    "answer": "B",
+    "explanation": "Mild AOM/viral URI with mobile drum: symptomatic first; antibiotics if bulging, otorrhoea, <2y bilateral, or no improvement."
+  },
+  {
+    "id": "PD-16",
+    "subject": "PD",
+    "stem": "Parents of a child with diabetes insipidus ask what labs to expect. Which pattern fits DI?",
+    "options": [
+      "A. High urine SG, low serum osmolality",
+      "B. Low urine SG, high serum osmolality + hypernatraemia + polyuria",
+      "C. Normal labs",
+      "D. Low sodium only",
+      "E. High potassium only"
+    ],
+    "answer": "B",
+    "explanation": "DI: dilute polyuria → concentrated serum. Teach parents thirst, dehydration signs, desmopressin (central) vs thiazide/low salt (nephrogenic)."
+  },
+  {
+    "id": "PD-17",
+    "subject": "PD",
+    "stem": "A 12-month-old is due vaccines. When is MMR given?",
+    "options": [
+      "A. Never give",
+      "B. First dose 12–15 months (second 4–6y); no need to repeat for endemic area if documented",
+      "C. Only after 10 years",
+      "D. Daily",
+      "E. Only in outbreak"
+    ],
+    "answer": "B",
+    "explanation": "MMR 12–15mo + 4–6y. Check UAE schedule; catch-up if missed; contraindicated in pregnancy/severe immunocompromise."
+  },
+  {
+    "id": "PD-18",
+    "subject": "PD",
+    "stem": "Newborn hyperbilirubinaemia + anaemia + hypoproteinaemia day 1, O-negative mother antiglobulin positive, no antenatal care. Baby blood type likely?",
+    "options": [
+      "A. O-negative",
+      "B. Rh-positive (e.g. A+ or B+) – Rh-positive fetus in sensitised Rh-negative mother",
+      "C. Impossible",
+      "D. AB-negative only",
+      "E. No typing needed"
+    ],
+    "answer": "B",
+    "explanation": "Rh-positive fetus in sensitised Rh-negative mother → haemolysis. Type baby, DAT, bilirubin, treat aggressively to prevent kernicterus."
+  }
+]

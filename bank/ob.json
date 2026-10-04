@@ -1,0 +1,254 @@
+[
+  {
+    "id": "OB-01",
+    "subject": "OB",
+    "stem": "24-year-old, 8 weeks amenorrhoea, RIF pain + vaginal spotting, pyrexial, cervical excitation on bimanual. Most likely?",
+    "options": [
+      "A. Endometriosis",
+      "B. Ectopic pregnancy – ruptured/unstable must be excluded urgently",
+      "C. Ovarian tumour only",
+      "D. Normal pregnancy",
+      "E. UTI"
+    ],
+    "answer": "B",
+    "explanation": "Demo recall: pain + bleeding + amenorrhoea + peritonism/cervical excitation = ectopic until proven otherwise. Resuscitate, beta-hCG, TVUS, surgery (laparoscopy/laparotomy by stability)."
+  },
+  {
+    "id": "OB-02",
+    "subject": "OB",
+    "stem": "33-year-old sudden severe colicky RIF pain radiating to back/pelvis, vomiting, tender mobile RIF mass. Most likely emergency?",
+    "options": [
+      "A. Appendicitis only",
+      "B. Ovarian torsion",
+      "C. Cystitis",
+      "D. Constipation",
+      "E. Normal ovulation"
+    ],
+    "answer": "B",
+    "explanation": "Sudden unilateral severe pain + vomiting + adnexal mass = torsion. Doppler US, urgent gynaecology – detorsion/oophoropexy, ovary often salvageable early."
+  },
+  {
+    "id": "OB-03",
+    "subject": "OB",
+    "stem": "32-year-old multigravida, 32 weeks, sudden painless pool of blood at night, now stopped, transverse lie, maternal pulse 120, BP 110/70, FH 145. Most likely?",
+    "options": [
+      "A. Placental abruption",
+      "B. Placenta praevia",
+      "C. Vasa praevia labour",
+      "D. Normal show",
+      "E. Cervicitis"
+    ],
+    "answer": "B",
+    "explanation": "Painless third-trimester bleeding + malpresentation = praevia. No PV exam; resuscitate, Rh status, steroids if preterm, US placenta location, C-section if major."
+  },
+  {
+    "id": "OB-04",
+    "subject": "OB",
+    "stem": "26 weeks: BP 165/110, proteinuria 2+, headache, hyperreflexia. Diagnosis and seizure prophylaxis?",
+    "options": [
+      "A. Chronic HTN – no treatment",
+      "B. Preeclampsia with severe features – magnesium sulfate + timely delivery",
+      "C. UTI – nitrofurantoin only",
+      "D. Migraine – sumatriptan",
+      "E. Anxiety"
+    ],
+    "answer": "B",
+    "explanation": "Preeclampsia: HTN + proteinuria/end-organ after 20w. MgSO4 prevents eclampsia; delivery is definitive. Control BP urgently."
+  },
+  {
+    "id": "OB-05",
+    "subject": "OB",
+    "stem": "Preeclamptic woman seizes. First drug?",
+    "options": [
+      "A. Diazepam infusion lifelong",
+      "B. Magnesium sulfate IV loading + maintenance",
+      "C. Phenytoin only",
+      "D. No drug",
+      "E. Insulin"
+    ],
+    "answer": "B",
+    "explanation": "Eclampsia: MgSO4 is drug of choice; secure airway, control BP, deliver when stable."
+  },
+  {
+    "id": "OB-06",
+    "subject": "OB",
+    "stem": "Multiparous woman just delivered: boggy uterus, heavy vaginal bleeding. First steps?",
+    "options": [
+      "A. Uterine massage + oxytocin + fundal assessment + resuscitation",
+      "B. Immediate hysterectomy in all",
+      "C. Discharge",
+      "D. Antibiotic only",
+      "E. Observation 24 h"
+    ],
+    "answer": "A",
+    "explanation": "Atonic PPH: call for help, massage, oxytocin, empty bladder, check placenta/trauma, tranexamic acid early, transfuse if needed."
+  },
+  {
+    "id": "OB-07",
+    "subject": "OB",
+    "stem": "28 weeks PPROM: pooling, ferning positive. Afebrile, fetus cephalic, no labour. Management?",
+    "options": [
+      "A. Immediate vaginal exam repeatedly",
+      "B. Expectant + steroids + antibiotics (erythromycin) + monitoring, no digital PV unless in labour",
+      "C. Home without follow-up",
+      "D. Induction at all gestations immediately",
+      "E. Bed rest with no steroids"
+    ],
+    "answer": "B",
+    "explanation": "PPROM preterm: prolong latency if no infection/distress – steroids for lungs, antibiotics, surveillance. Avoid digital exams."
+  },
+  {
+    "id": "OB-08",
+    "subject": "OB",
+    "stem": "28-year-old heavy prolonged periods, pelvic pressure, enlarged uterus with firm mass. Most likely?",
+    "options": [
+      "A. Fibroid (leiomyoma)",
+      "B. Ectopic",
+      "C. Appendicitis",
+      "D. Bladder stone",
+      "E. Pregnancy only"
+    ],
+    "answer": "A",
+    "explanation": "Menorrhagia + bulk symptoms + firm uterine mass = fibroid. US confirms; manage by symptoms/fertility (tranexamic, hormonal, myomectomy/hysterectomy)."
+  },
+  {
+    "id": "OB-09",
+    "subject": "OB",
+    "stem": "22-year-old severe dysmenorrhoea, dyspareunia, chocolate cyst on US. Most likely?",
+    "options": [
+      "A. PID only",
+      "B. Endometriosis",
+      "C. Fibroid only",
+      "D. Normal",
+      "E. Appendicitis"
+    ],
+    "answer": "B",
+    "explanation": "Cyclic pain + infertility + endometrioma = endometriosis. Laparoscopy gold standard; COCP/progestin/GnRH + surgery per severity."
+  },
+  {
+    "id": "OB-10",
+    "subject": "OB",
+    "stem": "24-year-old oligomenorrhoea, hirsutism, acne, BMI 32, polycystic ovaries. First-line?",
+    "options": [
+      "A. Immediate IVF",
+      "B. Lifestyle weight loss + combined OCP for cycle/hirsutism; metformin if dysglycaemia",
+      "C. Hysterectomy",
+      "D. Antibiotic",
+      "E. No treatment"
+    ],
+    "answer": "B",
+    "explanation": "PCOS: lifestyle is foundation; COCP regulates cycles/androgens; manage fertility with letrozole/clomiphene when desired."
+  },
+  {
+    "id": "OB-11",
+    "subject": "OB",
+    "stem": "Healthy 30-year-old: cervical screening advice?",
+    "options": [
+      "A. No screening ever",
+      "B. HPV-based screening per national guideline (e.g. age 25–65) + colposcopy if positive",
+      "C. Annual Pap from age 12",
+      "D. Hysterectomy for screening",
+      "E. Screening only after cancer"
+    ],
+    "answer": "B",
+    "explanation": "HPV testing is primary screen in most UAE-aligned guidelines; follow abnormal with colposcopy/biopsy."
+  },
+  {
+    "id": "OB-12",
+    "subject": "OB",
+    "stem": "35-year-old smoker, migraine with aura, wants contraception. Safest?",
+    "options": [
+      "A. Combined OCP",
+      "B. Copper IUD (or progestin-only if suitable) – avoid oestrogen with aura/smoking>35",
+      "C. No contraception",
+      "D. High-dose oestrogen",
+      "E. Vaginal douching"
+    ],
+    "answer": "B",
+    "explanation": "Migraine with aura + smoking >35 = oestrogen contraindicated (stroke). Copper IUD highly effective, no hormones."
+  },
+  {
+    "id": "OB-13",
+    "subject": "OB",
+    "stem": "Middle-aged woman post ovarian cancer: menarche 17, COCP 5 years, multiparous. What increases endometrial cancer risk?",
+    "options": [
+      "A. COCP use",
+      "B. Unopposed oestrogen exposure (e.g. theca-cell tumour, obesity)",
+      "C. Early menopause",
+      "D. Smoking – protective but never recommended",
+      "E. None"
+    ],
+    "answer": "B",
+    "explanation": "Recall: COCP, late menarche and multiparity protect; smoking is never advised. Unopposed oestrogen (obesity, theca-cell tumour, tamoxifen) raises risk."
+  },
+  {
+    "id": "OB-14",
+    "subject": "OB",
+    "stem": "58-year-old postmenopausal vaginal bleeding. Next step?",
+    "options": [
+      "A. Reassure",
+      "B. Urgent endometrial sampling (pipelle/hysteroscopy + biopsy) + TVUS",
+      "C. Oestrogen cream only",
+      "D. Pap only",
+      "E. Wait 1 year"
+    ],
+    "answer": "B",
+    "explanation": "Postmenopausal bleeding = endometrial cancer until proven otherwise. Biopsy + imaging promptly."
+  },
+  {
+    "id": "OB-15",
+    "subject": "OB",
+    "stem": "New immigrant delivers baby with cataracts, deafness, microcephaly, hepatosplenomegaly. No drugs. Prevention for next pregnancy?",
+    "options": [
+      "A. Folic acid only",
+      "B. Rubella vaccination before conception (avoid in pregnancy)",
+      "C. Illicit drugs",
+      "D. Genetic testing only",
+      "E. Nothing"
+    ],
+    "answer": "B",
+    "explanation": "Congenital rubella triad. Prevent by pre-conception MMR/rubella immunity check; vaccinate when not pregnant."
+  },
+  {
+    "id": "OB-16",
+    "subject": "OB",
+    "stem": "Couple worried about Down syndrome. Definitive test and timing?",
+    "options": [
+      "A. Amniocentesis ~15–16 weeks (or CVS 10–13w) for karyotype",
+      "B. Ultrasound only definitive",
+      "C. No testing",
+      "D. Postnatal only",
+      "E. Urine test"
+    ],
+    "answer": "A",
+    "explanation": "Recall: amnio 15–16w definitive; CVS earlier. Screening (NT + biochemistry/NIPT) is not diagnostic."
+  },
+  {
+    "id": "OB-17",
+    "subject": "OB",
+    "stem": "38 weeks: diazepam, indomethacin, MgSO4, pethidine given. FHR 190→150 reactive. Which drug least likely to drop FHR?",
+    "options": [
+      "A. Pethidine",
+      "B. Indomethacin",
+      "C. Magnesium",
+      "D. Diazepam",
+      "E. All equally drop"
+    ],
+    "answer": "B",
+    "explanation": "Recall logic: opioids, benzodiazepines and MgSO4 all blunt variability and rate; indomethacin has the least direct fetal cardiac effect here. NSAIDs still need ductus and fluid monitoring."
+  },
+  {
+    "id": "OB-18",
+    "subject": "OB",
+    "stem": "Pregnant woman with diarrhoea, Giardia confirmed. Safe treatment?",
+    "options": [
+      "A. Metronidazole in 1st trimester routinely",
+      "B. Paromomycin (non-absorbed) where available",
+      "C. Albendazole",
+      "D. No treatment ever",
+      "E. High-dose tetracycline"
+    ],
+    "answer": "B",
+    "explanation": "Recall: paromomycin is luminal, minimally absorbed – preferred for giardia in pregnancy per many sources. Avoid teratogens; consult OB/ID."
+  }
+]

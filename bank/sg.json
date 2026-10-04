@@ -1,0 +1,254 @@
+[
+  {
+    "id": "SG-01",
+    "subject": "SG",
+    "stem": "What is the first symptom of acute appendicitis classically?",
+    "options": [
+      "A. Fever first",
+      "B. Periumbilical/generalised pain migrating to RLQ",
+      "C. RLQ pain first without migration",
+      "D. Nausea alone",
+      "E. Haematuria"
+    ],
+    "answer": "B",
+    "explanation": "Visceral → somatic: vague periumbilical pain → localises to McBurney after 6–12h + anorexia/nausea/fever. Alvarado + US/CT."
+  },
+  {
+    "id": "SG-02",
+    "subject": "SG",
+    "stem": "35-year-old RUQ pain after fatty meal, Murphy positive, fever. Best test and definitive treatment?",
+    "options": [
+      "A. ECG only",
+      "B. RUQ US for cholecystitis → laparoscopic cholecystectomy (antibiotics/supportive first)",
+      "C. Colonoscopy",
+      "D. No treatment",
+      "E. ERCP in all"
+    ],
+    "answer": "B",
+    "explanation": "Cholecystitis: US wall thickening/pericholecystic fluid + Murphy. Antibiotics, fluids, early lap chole; ERCP only if CBD stone/cholangitis."
+  },
+  {
+    "id": "SG-03",
+    "subject": "SG",
+    "stem": "Elderly distension, vomiting, no flatus/stool, air-fluid levels. First steps?",
+    "options": [
+      "A. High-fibre diet",
+      "B. NGT + IV fluids + electrolytes + AXR/CT + surgical review; operate if strangulation/tumour",
+      "C. Discharge",
+      "D. Laxative only",
+      "E. Colonoscopy at home"
+    ],
+    "answer": "B",
+    "explanation": "Bowel obstruction: decompress, resuscitate, find cause (adhesions/hernia/tumour/volvulus). Red flags: pain + tachycardia + peritonism."
+  },
+  {
+    "id": "SG-04",
+    "subject": "SG",
+    "stem": "Groin bulge that enlarges on coughing/straining, reducible. Management?",
+    "options": [
+      "A. Truss lifelong",
+      "B. Elective hernia repair (mesh) – urgent if strangulated (pain + irreducible + vomiting)",
+      "C. Antibiotic",
+      "D. No follow-up",
+      "E. Exercise only"
+    ],
+    "answer": "B",
+    "explanation": "Inguinal hernia: elective repair; strangulation = emergency surgery. Counsel smoking/constipation/prostate."
+  },
+  {
+    "id": "SG-05",
+    "subject": "SG",
+    "stem": "30-year-old breast lump: firm, mobile. Best approach?",
+    "options": [
+      "A. Reassure without exam",
+      "B. Triple assessment: clinical + imaging (US/mammo by age) + pathology (FNAC/core)",
+      "C. Mastectomy all",
+      "D. Antibiotics all",
+      "E. Wait 5 years"
+    ],
+    "answer": "B",
+    "explanation": "Triple assessment for any discrete lump. Red flags: hard, fixed, skin change, nipple discharge, axillary nodes."
+  },
+  {
+    "id": "SG-06",
+    "subject": "SG",
+    "stem": "Thyroid nodule: euthyroid, 2 cm solid. Next step?",
+    "options": [
+      "A. Thyroidectomy all",
+      "B. Ultrasound + FNAC (Bethesda) + TFTs; operate by risk/cytology",
+      "C. Radioiodine all",
+      "D. No workup",
+      "E. Palpation only"
+    ],
+    "answer": "B",
+    "explanation": "Nodule workup: US (TIRADS) + FNA. Surgery for malignant/suspicious/compressive/toxic. Don't miss anaplastic/red flags."
+  },
+  {
+    "id": "SG-07",
+    "subject": "SG",
+    "stem": "40% burns adult. Initial fluid formula?",
+    "options": [
+      "A. Parkland: 4 mL × kg × %TBSA (lactated Ringer’s), half in first 8 h + airway/analgesia/tetanus",
+      "B. No fluids",
+      "C. Dextrose only",
+      "D. Blood only",
+      "E. Oral water only"
+    ],
+    "answer": "A",
+    "explanation": "Burns: ATLS ABCs, stop burning, Parkland, urine output 0.5–1 mL/kg/h, warm, tetanus, refer to burns centre."
+  },
+  {
+    "id": "SG-08",
+    "subject": "SG",
+    "stem": "Tibial fracture with severe pain out of proportion, tense compartments, paraesthesia. Action?",
+    "options": [
+      "A. Elevate + strong opioid and wait",
+      "B. Immediate fasciotomy – compartment syndrome",
+      "C. Massage",
+      "D. Discharge",
+      "E. Cast tighter"
+    ],
+    "answer": "B",
+    "explanation": "Compartment syndrome is surgical emergency. Remove constriction, measure pressures, fasciotomy <6h to save limb."
+  },
+  {
+    "id": "SG-09",
+    "subject": "SG",
+    "stem": "16-year-old sudden severe scrotal pain, absent cremasteric, high-riding testis. Best next step?",
+    "options": [
+      "A. Antibiotics 2 weeks",
+      "B. Emergency scrotal exploration <6 h (detorsion + orchiopexy)",
+      "C. Reassure",
+      "D. US in 1 week",
+      "E. Ice only"
+    ],
+    "answer": "B",
+    "explanation": "Torsion: time = testis. Don't delay for imaging if classic; Doppler if equivocal but go to theatre fast."
+  },
+  {
+    "id": "SG-10",
+    "subject": "SG",
+    "stem": "In polytrauma, what is the correct assessment order?",
+    "options": [
+      "A. Leg fracture first",
+      "B. ATLS primary survey: Airway + C-spine → Breathing → Circulation → Disability → Exposure",
+      "C. CT first always",
+      "D. History first",
+      "E. Discharge"
+    ],
+    "answer": "B",
+    "explanation": "ATLS: treat greatest threat to life first. Airway wins. Pelvic binder, TXA <3h, massive transfusion if bleeding."
+  },
+  {
+    "id": "SG-11",
+    "subject": "SG",
+    "stem": "Elderly subcapital femoral neck fracture, stable with rib fracture + splenic contusion managed conservatively. Hip plan?",
+    "options": [
+      "A. Discharge for elective in 6 months",
+      "B. Urgent surgery (arthroplasty vs fixation by fracture type and age) – AVN risk rises with delay",
+      "C. Bed rest only",
+      "D. Traction lifelong",
+      "E. No X-ray"
+    ],
+    "answer": "B",
+    "explanation": "Recall: displaced subcapital → high AVN risk; fix urgently once resuscitated/optimised, VTE prophylaxis, ortho-geriatrics."
+  },
+  {
+    "id": "SG-12",
+    "subject": "SG",
+    "stem": "60-year-old medial malleolar ulcer, varicose veins, hyperpigmentation, mild non-tender calf swelling. Next step?",
+    "options": [
+      "A. Bed rest only",
+      "B. Compression bandage + leg elevation + venous workup after excluding arterial disease/DVT",
+      "C. Topical antibiotics alone",
+      "D. Heparin 80 mg blindly",
+      "E. Amputation"
+    ],
+    "answer": "B",
+    "explanation": "Venous ulcer: compression is cornerstone if ABPI normal. Check arterial, rule out DVT if swelling/tender, dressings, refer vascular."
+  },
+  {
+    "id": "SG-13",
+    "subject": "SG",
+    "stem": "Claudication 100 m, absent pedal pulses, ABI 0.6. Diagnosis + first advice?",
+    "options": [
+      "A. Venous – compression",
+      "B. Peripheral arterial disease – smoking cessation + exercise + statin + antiplatelet + vascular referral",
+      "C. Neuropathy only",
+      "D. No treatment",
+      "E. Amputation now"
+    ],
+    "answer": "B",
+    "explanation": "PAD: ABI <0.9 diagnostic. Supervised exercise, risk-factor control, cilostazol where suitable, revascularise if critical/limiting."
+  },
+  {
+    "id": "SG-14",
+    "subject": "SG",
+    "stem": "Epigastric pain radiating to back, vomiting, lipase 8× normal after alcohol/gallstone. Management?",
+    "options": [
+      "A. Immediate surgery all",
+      "B. Fluids + analgesia + antiemetic + monitor (Ranson/Glasgow) + treat gallstone aetiology",
+      "C. Antacid only",
+      "D. Discharge",
+      "E. Steroids"
+    ],
+    "answer": "B",
+    "explanation": "Pancreatitis: aggressive fluids, nutrition, no routine antibiotics; ERCP if cholangitis/obstruction; cholecystectomy after gallstone episode."
+  },
+  {
+    "id": "SG-15",
+    "subject": "SG",
+    "stem": "Sudden severe epigastric pain, rigid abdomen, free air under diaphragm. Likely cause and best initial test?",
+    "options": [
+      "A. Perforated peptic ulcer – erect CXR + urgent surgery + PPI/H. pylori eradication",
+      "B. Gastritis – antacid",
+      "C. MI – troponin only",
+      "D. Renal colic",
+      "E. Normal"
+    ],
+    "answer": "A",
+    "explanation": "Perforation: resuscitate, NGT, broad antibiotics, laparotomy/laparoscopic repair + washout. Don't miss Boerhaave/ectopic."
+  },
+  {
+    "id": "SG-16",
+    "subject": "SG",
+    "stem": "Painful defecation with bright-red bleeding + anal fissure vs haemorrhoids. First care?",
+    "options": [
+      "A. Surgery all immediately",
+      "B. Fibre + fluids + sitz baths + topical; banding/surgery if refractory/prolapsed",
+      "C. No fibre",
+      "D. Steroids lifelong",
+      "E. Ignore"
+    ],
+    "answer": "B",
+    "explanation": "Most anal pain + bleeding benign: exclude cancer/IBD red flags, conservative first, refer if thrombosed/prolapse/anaemia."
+  },
+  {
+    "id": "SG-17",
+    "subject": "SG",
+    "stem": "Post-op fever day 5, wound erythema, pus. Action?",
+    "options": [
+      "A. Reassure",
+      "B. Open/inspect, culture, debride if needed + antibiotics + tetanus/diabetes check",
+      "C. Close tighter",
+      "D. Steroid cream only",
+      "E. No culture"
+    ],
+    "answer": "B",
+    "explanation": "Surgical-site infection: examine, probe, culture, debride/necrotising check, antibiotics, glycaemic control."
+  },
+  {
+    "id": "SG-18",
+    "subject": "SG",
+    "stem": "Diabetic foot ulcer with numbness, pulses present. Key step?",
+    "options": [
+      "A. Amputate immediately",
+      "B. Offloading + debridement + vascular/neuro check + antibiotics if infected + glycaemic control",
+      "C. Tight shoe",
+      "D. Soak in hot water",
+      "E. No exam"
+    ],
+    "answer": "B",
+    "explanation": "Neuropathic ulcer: offload (total-contact cast), daily care, probe-to-bone/osteomyelitis check, MDT foot clinic."
+  }
+]
