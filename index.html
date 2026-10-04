@@ -247,7 +247,7 @@ e.preventDefault();$('q').focus();return;}
 if(e.key==='?'){alert('Keys: / search · 1–5 or A–E answer the question in view · Tab moves between questions.');return;}
 const k=e.key.toUpperCase();const map={'1':'A','2':'B','3':'C','4':'D','5':'E','A':'A','B':'B','C':'C','D':'D','E':'E'};
 if(!map[k])return;const t=document.activeElement;if(t&&(t.tagName==='INPUT'&&t.type==='search'||t.tagName==='SELECT'))return;
-let target=null;document.querySelectorAll('.item').forEach(q=>{if(q.style.display==='none')return;const r=q.getBoundingClientRect();if(r.top<innerHeight*0.6&&r.bottom>innerHeight*0.35)target=target||q;});
+let target=null,best=1e12;document.querySelectorAll('.item').forEach(q=>{if(q.style.display==='none')return;const r=q.getBoundingClientRect();if(r.bottom<0||r.top>innerHeight)return;const d=Math.abs((r.top+r.bottom)/2-innerHeight*0.45);if(d<best){best=d;target=q;}});
 if(!target)return;const r=target.querySelector('input[value="'+map[k]+'"]');if(r){r.checked=true;delete target.dataset.peep;mark(target);r.focus();}
 });
 load();applyFilters();scores();
