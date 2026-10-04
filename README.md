@@ -1,4 +1,4 @@
-# EMREE Study Ledger — 120 Questions by Subject
+# EMREE Question Bank — 120 Questions by Subject
 
 **Live:** https://humaizm.github.io/emree-study-ledger/
 **Companion PDF:** https://humaizm.github.io/emree-study-ledger/EMREE_Past_Papers_by_Subject_Oct2026.pdf

@@ -123,6 +123,13 @@ def sub_once(t, old, new, label):
     return t.replace(old, new, 1)
 
 
+def resub_once(t, pattern, repl, label):
+    import re
+    found = re.findall(pattern, t)
+    assert len(found) == 1, f"anchor not unique/found: {label} ({len(found)})"
+    return re.sub(pattern, repl, t, count=1)
+
+
 def build(manifest, subjects, total):
     t = INDEX.read_text(encoding="utf-8")
 
@@ -141,22 +148,21 @@ def build(manifest, subjects, total):
     b = t.index('</main>', a)
     t = t[:a] + render_chapters(subjects) + "\n" + t[b:]
 
-    # 4. global counts
-    t = sub_once(t, "<title>EMREE Study Ledger — 120 Questions by Subject</title>",
-                 f"<title>EMREE Study Ledger — {total} Questions by Subject</title>", "title")
-    t = sub_once(t, f"· {120} questions · {7} subjects ·",
-                 f"· {total} questions · {len(subjects)} subjects ·", "issue")
-    t = sub_once(t, '<div class="stat"><b>120</b><span>single-best-answer vignettes</span></div>',
-                 f'<div class="stat"><b>{total}</b><span>single-best-answer vignettes</span></div>', "stat-n")
-    t = sub_once(t, '<div class="stat"><b>7</b><span>blueprint subjects, weakest first</span></div>',
-                 f'<div class="stat"><b>{len(subjects)}</b><span>blueprint subjects, weakest first</span></div>', "stat-s")
-    t = sub_once(t, '<div class="score-big"><span id="big">0 / 120</span></div>',
-                 f'<div class="score-big"><span id="big">0 / {total}</span></div>', "big")
-    t = sub_once(t, 'aria-valuemax="120"', f'aria-valuemax="{total}"', "meter")
+    # 4. global counts (regex anchors: version-agnostic so the bank can grow)
+    t = resub_once(t, r"<title>EMREE .*? — \d+ Questions by Subject</title>",
+                   f"<title>EMREE Question Bank — {total} Questions by Subject</title>", "title")
+    t = resub_once(t, r"· \d+ questions · \d+ subjects ·",
+                   f"· {total} questions · {len(subjects)} subjects ·", "issue")
+    t = resub_once(t, r'<div class="stat"><b>\d+</b><span>single-best-answer vignettes</span></div>',
+                   f'<div class="stat"><b>{total}</b><span>single-best-answer vignettes</span></div>', "stat-n")
+    t = resub_once(t, r'<div class="stat"><b>\d+</b><span>blueprint subjects, weakest first</span></div>',
+                   f'<div class="stat"><b>{len(subjects)}</b><span>blueprint subjects, weakest first</span></div>', "stat-s")
+    t = resub_once(t, r'<div class="score-big"><span id="big">0 / \d+</span></div>',
+                   f'<div class="score-big"><span id="big">0 / {total}</span></div>', "big")
+    t = resub_once(t, r'aria-valuemax="\d+"', f'aria-valuemax="{total}"', "meter")
     breakdown = " · ".join(f'{SHORT[s["code"]]} {len(items)}' for s, items in subjects)
-    t = sub_once(t, "120 original vignettes: IM 24 · OBG 18 · Peds 18 · Surgery 18 · Family+Ethics 18 · Psych 12 · Public Health 12",
-                 f"{total} original vignettes: {breakdown}", "colophon-counts")
-    t = sub_once(t, "CBT 120 in 3 h", f"CBT {total} in 3 h", "colophon-cbt")
+    t = resub_once(t, r"\d+ original vignettes: .*? · CBT \d+ in 3 h",
+                   f"{total} original vignettes: {breakdown} · CBT {total} in 3 h", "colophon")
     return t
 
 
