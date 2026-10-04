@@ -33,6 +33,9 @@ bank/*.json  →  tools/build_site.py  →  index.html  →  GitHub Pages (free 
 Adding questions: edit a subject JSON, bump `bank/manifest.json`, run
 `python tools/build_site.py`, push. CI does the worrying.
 
+> **Working on this with an agent?** Start with `AGENTS.md` — architecture,
+> commands, conventions, and every trap, in one place.
+
 ## Project layout
 
 ```text
