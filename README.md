@@ -5,7 +5,8 @@
 
 Interactive EMREE practice: 120 single-best-answer vignettes across the 7 NIHS
 blueprint subjects, with instant marking, exam-hold mode, 3-hour timer, search,
-flags, keyboard answering, and progress that persists in the browser.
+flags, keyboard answering, guarded reset, and progress that auto-saves locally
+plus export file, resume link, and optional free online sync (`docs/SYNC.md`).
 
 > **Honest note.** NIHS publishes no official past papers. Every item here is an
 > original practice question written from 2012–2025 student recall *patterns* —
@@ -27,8 +28,8 @@ bank/*.json  →  tools/build_site.py  →  index.html  →  GitHub Pages (free 
   Deterministic and idempotent: same bank, same bytes.
 - **`.github/workflows/validate.yml`** — runs the validator on every push.
   The site and the bank cannot drift apart silently.
-- **Releases** — frozen snapshots (`v1.0-audited`, `v1.1-fixed`, …) so any
-  version stays downloadable forever.
+- **Releases** — frozen snapshots (`v0.21.0`, …) so any
+  version stays downloadable forever. Versioning is `0.x.y` only.
 
 Adding questions: edit a subject JSON, bump `bank/manifest.json`, run
 `python tools/build_site.py`, push. CI does the worrying.
@@ -39,8 +40,11 @@ Adding questions: edit a subject JSON, bump `bank/manifest.json`, run
 ## Project layout
 
 ```text
-index.html                                # the site (generated — don't hand-edit)
+index.html                                # the site (generated — don't hand-edit questions)
 EMREE_Past_Papers_by_Subject_Oct2026.pdf  # companion intelligence file
+site-config.js                            # optional Firebase config (null = fully offline)
+firestore.rules                           # security contract for the optional sync backend
+docs/SYNC.md                              # 5-minute free online-sync setup
 bank/                                     # question bank backend
 tools/build_site.py                       # validator + site builder
 .github/workflows/validate.yml            # drift guard

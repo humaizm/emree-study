@@ -115,6 +115,18 @@ body{overflow-x:clip;margin:0;background:var(--color-paper);color:var(--color-in
 .item-foot{display:flex;gap:var(--space-md);margin-top:var(--space-xs)}
 .tlink{background:none;border:0;font:inherit;font-size:var(--text-sm);cursor:pointer;padding:8px 0;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;white-space:nowrap}
 .tlink:hover{text-decoration-thickness:3px}
+.save-line{font-size:12.5px;color:var(--color-muted);margin:6px 0 0}
+.join-input{font:inherit;color:var(--color-ink);background:var(--color-paper);border:1px solid var(--color-rule);border-radius:var(--radius-input);padding:0.6rem 0.7rem;min-height:44px;flex:1;min-width:0;font-family:var(--font-outlier);font-size:13px;letter-spacing:0.06em;text-transform:uppercase}
+.modal-ov{position:fixed;inset:0;z-index:var(--z-modal);display:flex;align-items:center;justify-content:center;background:oklch(20% 0.01 60 / 0.55);padding:1rem}
+.modal-ov[hidden]{display:none}
+.modal{background:var(--color-paper);border:1px solid var(--color-ink);border-radius:var(--radius-card);max-width:26rem;width:100%;padding:var(--space-lg)}
+.modal h2{font-family:var(--font-display);font-style:normal;font-size:var(--text-lg);margin:0 0 var(--space-xs)}
+.modal p{margin:0 0 var(--space-xs);font-size:14.5px}
+.modal-meta{font-family:var(--font-outlier);font-size:var(--text-xs);color:var(--color-muted)}
+.modal-row{display:flex;gap:var(--space-sm);margin-top:var(--space-md);flex-wrap:wrap}
+.modal-row .btn{flex:1;min-width:10rem}
+.btn.danger{border-color:var(--color-bad);color:var(--color-bad)}
+.btn.danger:hover{background:oklch(94% 0.05 28)}
 .empty{display:none;border:1px dashed var(--color-rule);border-radius:var(--radius-card);padding:var(--space-xl);text-align:center;color:var(--color-muted)}
 .colophon{border-top:3px solid var(--color-ink);margin-top:var(--space-2xl);padding:var(--space-lg) 0 var(--space-2xl);font-family:var(--font-outlier);font-size:var(--text-xs);line-height:1.8;color:var(--color-muted)}
 .colophon strong{color:var(--color-ink)}
@@ -162,6 +174,13 @@ body{overflow-x:clip;margin:0;background:var(--color-paper);color:var(--color-in
 <div><div class="score-big"><span id="big">0 / 120</span></div>
 <div class="meter" role="progressbar" aria-label="Overall progress" aria-valuemin="0" aria-valuemax="120" aria-valuenow="0" id="meter"><i id="fill"></i></div>
 <p style="margin:6px 0 0;font-size:13px;color:var(--color-muted)"><span id="pct">0%</span> <span id="pct-word">correct overall</span> · <span id="ansd">0</span> answered</p></div>
+<div><p class="field">Keep your progress</p>
+<p class="save-line">Auto-save <span id="saveState">on</span> &#8212; free, no account.</p>
+<div class="row"><button class="btn" id="expBtn" type="button">Export</button><button class="btn" id="impBtn" type="button">Import</button><button class="btn" id="linkBtn" type="button">Copy link</button><input type="file" id="impFile" accept=".json,application/json" hidden></div></div>
+<div id="syncBox"><p class="field">Online sync</p>
+<p class="save-line" id="syncLine">Sync: checking…</p>
+<div class="row" id="syncBtns" hidden><button class="btn" id="syncKeyBtn" type="button">Device key</button><button class="btn" id="syncJoinBtn" type="button">Enter key</button></div>
+<div class="row" id="syncJoinRow" hidden><input id="joinKey" class="join-input" placeholder="XXXX-XXXX-XXXX-XXXX" autocomplete="off" autocapitalize="characters" spellcheck="false"><button class="btn solid" id="joinGo" type="button">Link</button><button class="btn" id="joinCancel" type="button">Cancel</button></div></div>
 <div><p class="field">Timer — 3 hours</p><p class="timer" id="clock">180:00</p>
 <div class="row"><button class="btn solid" id="tgo" type="button">Start</button><button class="btn" id="tpause" type="button">Pause</button><button class="btn" id="treset" type="button">Reset</button></div></div>
 <div><p class="field">Mode</p><div class="mode" role="group" aria-label="Answer mode"><button type="button" id="mPrac" aria-pressed="true">Practice</button><button type="button" id="mExam" aria-pressed="false">Exam</button></div>
@@ -181,19 +200,21 @@ body{overflow-x:clip;margin:0;background:var(--color-paper);color:var(--color-in
 </main>
 </div>
 
+<div class="modal-ov" id="modal-ov" hidden><div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-body"><h2 id="modal-title"></h2><p id="modal-body"></p><p class="modal-meta" id="modal-meta"></p><div class="modal-row"><button class="btn" id="modal-no" type="button">Cancel</button><button class="btn" id="modal-ok" type="button">Confirm</button></div></div></div>
 <footer class="wrap"><div class="colophon">
 <p><strong>EMREE QUESTION BANK · OCT 2026</strong> · 120 original vignettes: IM 24 · OBG 18 · Peds 18 · Surgery 18 · Family+Ethics 18 · Psych 12 · Public Health 12 · CBT 120 in 3 h, no negative marking, Al Ain, Dec–Mar season, AED 1,000 ex-tax, 3 attempts/year, 2-year validity.</p>
 <p>RECALL MAP · EMSTREX 2012 sample + Blueprint 2 (Drive) · 2008/2011/Jan-2014/Feb-2014 index (home.blog) · 2004–2020 archive (Scribd 784545742) · Q-bank to 22 Feb 2020 (Scribd 556790674) · 5 Mar 2024 ~112 recalls (Scribd 641712306) · 2 Mar 2025 recalls (Scribd 889408204) · 2022–23 cycle (Drive) · 289Q bank (Irin) · 2023–25 booster + 25Q sample (ExamCure) · guides (EmreePrep, First Medical 31 Aug 2026, Prometric Medical 18 Sep 2026, DW-SME 3 Jul 2026).</p>
 <p>COMPANION · EMREE_Past_Papers_by_Subject_Oct2026.pdf · STUDY AID ONLY, not affiliated with NIHS · verify doses and thresholds against current NICE / WHO / ACOG before clinical use.</p>
 </div></footer>
 
+<script src="site-config.js"></script>
 <script>
 const items=[...document.querySelectorAll('.item')];
 const TOTAL=items.length;let exam=false;
 const $=id=>document.getElementById(id);
 const store=(()=>{try{localStorage.setItem('__t','1');localStorage.removeItem('__t');return localStorage;}catch(e){return null;}})();
-function save(){if(!store)return;try{const s={};items.forEach(q=>{const c=q.querySelector('input:checked');s[q.id]={v:c?c.value:null,f:q.classList.contains('flagged')};});store.setItem('emree-ledger-v2',JSON.stringify({s,exam}));}catch(e){}}
-function load(){if(!store)return;try{const raw=store.getItem('emree-ledger-v2');if(!raw)return;const d=JSON.parse(raw);exam=!!d.exam;syncMode();Object.entries(d.s||{}).forEach(([id,st])=>{const q=document.getElementById(id);if(!q)return;if(st.v){const r=q.querySelector('input[value="'+st.v+'"]');if(r)r.checked=true;}if(st.f)toggleFlag(q,true);if(st.v)mark(q,true);});}catch(e){}}
+function save(){var sse0=document.getElementById('saveState');if(!store){if(sse0)sse0.textContent='Browser storage blocked \u2014 use Export to keep a copy';return;}try{const s={};items.forEach(q=>{const c=q.querySelector('input:checked');s[q.id]={v:c?c.value:null,f:q.classList.contains('flagged')};});store.setItem('emree-ledger-v2',JSON.stringify({s,exam,timer:{left,running:!!t}}));try{localStorage.setItem('emree-local-ts',String(Date.now()));}catch(_){}if(window.__emreePush)window.__emreePush();var sse=document.getElementById('saveState');if(sse){try{sse.textContent='Saved \u00b7 '+new Date().toLocaleTimeString([],{hour:'2-digit',minute:'2-digit',second:'2-digit'});}catch(_){sse.textContent='Saved';}}}catch(e){}}
+function load(){if(!store)return;try{const raw=store.getItem('emree-ledger-v2');if(!raw)return;const d=JSON.parse(raw);exam=!!d.exam;syncMode();if(d.timer&&typeof d.timer.left==='number'){try{left=Math.max(0,Math.min(180*60,d.timer.left|0));draw();}catch(_){}}Object.entries(d.s||{}).forEach(([id,st])=>{const q=document.getElementById(id);if(!q)return;if(st.v){const r=q.querySelector('input[value="'+st.v+'"]');if(r)r.checked=true;}if(st.f)toggleFlag(q,true);if(st.v)mark(q,true);});}catch(e){}}
 function syncMode(){$('mPrac').setAttribute('aria-pressed',String(!exam));$('mExam').setAttribute('aria-pressed',String(exam));if(exam)items.forEach(q=>{q.querySelector('.teach').hidden=true;});}
 function perCode(){const m={};items.forEach(q=>{const c=q.dataset.code;m[c]=m[c]||{ok:0,an:0,n:0};m[c].n++;const s=q.querySelector('input:checked');if(s){m[c].an++;if(s.value===q.dataset.answer)m[c].ok++;}});return m;}
 function dots(){const m={};items.forEach(q=>{(m[q.dataset.code]=m[q.dataset.code]||[]).push(q);});Object.entries(m).forEach(([c,qs])=>{const el=$('dots-'+c);if(!el)return;el.innerHTML='';qs.forEach(q=>{const i=document.createElement('i');const s=q.querySelector('input:checked');if(s)i.className=(exam&&!q.dataset.peep)?'ans':(s.value===q.dataset.answer?'ok':'no');el.appendChild(i);});});}
@@ -230,7 +251,7 @@ $('clearf').addEventListener('click',()=>{$('q').value='';$('f').value='all';app
 document.querySelectorAll('[data-goto]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();document.getElementById('sec-'+a.dataset.goto)?.scrollIntoView({behavior:(matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth')});}));
 $('reveal').addEventListener('click',()=>items.forEach(q=>{q.dataset.peep='1';q.querySelector('.teach').hidden=false;}));
 $('hide').addEventListener('click',()=>items.forEach(q=>{delete q.dataset.peep;q.querySelector('.teach').hidden=true;}));
-$('reset').addEventListener('click',()=>{$('q').value='';$('f').value='all';items.forEach(q=>{delete q.dataset.peep;q.querySelectorAll('input:checked').forEach(r=>r.checked=false);q.classList.remove('correct','wrong','answered','flagged');q.querySelector('.flag').setAttribute('aria-pressed','false');q.querySelector('.flag').textContent='Flag';q.querySelector('.verdict').hidden=true;q.querySelector('.teach').hidden=true;q.querySelector('.item-status').textContent='Unanswered';q.querySelectorAll('.choice').forEach(c=>c.classList.remove('picked','truth'));});save();applyFilters();scores();});
+$('reset').addEventListener('click',()=>{doResetFlow();});
 $('print').addEventListener('click',()=>window.print());
 $('mPrac').addEventListener('click',()=>{exam=false;syncMode();items.forEach(q=>{if(q.querySelector('input:checked'))mark(q);});save();});
 $('mExam').addEventListener('click',()=>{exam=true;syncMode();items.forEach(q=>{delete q.dataset.peep;if(q.querySelector('input:checked'))mark(q);else q.querySelector('.teach').hidden=true;});save();});
@@ -252,6 +273,196 @@ if(!target)return;if(tbox.bottom<0||tbox.top>innerHeight)target.scrollIntoView({
 if(!target)return;const r=target.querySelector('input[value="'+map[k]+'"]');if(r){r.checked=true;delete target.dataset.peep;mark(target);r.focus();}
 });
 load();applyFilters();scores();
+</script>
+<script>
+// ---------- progress safety: confirm modal, export/import, resume link, online sync ----------
+let modalPrevFocus=null;
+function emConfirm(o){
+  return new Promise(res=>{
+    const ov=document.getElementById('modal-ov');
+    const ok=document.getElementById('modal-ok'),no=document.getElementById('modal-no');
+    document.getElementById('modal-title').textContent=o.title||'Are you sure?';
+    document.getElementById('modal-body').textContent=o.body||'';
+    const meta=document.getElementById('modal-meta');
+    meta.textContent=o.meta||'';meta.style.display=o.meta?'':'none';
+    ok.textContent=o.okLabel||'Confirm';ok.classList.toggle('danger',!!o.danger);
+    no.style.display=o.onlyOk?'none':'';
+    modalPrevFocus=document.activeElement;
+    const done=v=>{ov.hidden=true;document.removeEventListener('keydown',esc,true);ok.onclick=no.onclick=ov.onclick=null;if(modalPrevFocus&&modalPrevFocus.focus)try{modalPrevFocus.focus();}catch(e){}res(v);};
+    const esc=e=>{if(e.key==='Escape'){e.stopPropagation();done(false);}};
+    ok.onclick=()=>done(true);no.onclick=()=>done(false);
+    ov.onclick=e=>{if(e.target===ov)done(false);};
+    document.addEventListener('keydown',esc,true);
+    ov.hidden=false;(o.onlyOk?ok:no).focus();
+  });
+}
+let saveFlashT=null;
+function flashSave(msg){const el=document.getElementById('saveState');if(!el)return;el.textContent=msg;clearTimeout(saveFlashT);saveFlashT=setTimeout(()=>{el.textContent='on';},5000);}
+function clearAnswers(){
+  items.forEach(q=>{delete q.dataset.peep;q.querySelectorAll('input:checked').forEach(r=>r.checked=false);q.classList.remove('correct','wrong','answered','flagged');const fb=q.querySelector('.flag');fb.setAttribute('aria-pressed','false');fb.textContent='Flag';q.querySelector('.verdict').hidden=true;q.querySelector('.teach').hidden=true;q.querySelector('.item-status').textContent='Unanswered';q.querySelectorAll('.choice').forEach(c=>c.classList.remove('picked','truth'));});
+}
+function bumpLocalTs(){try{localStorage.setItem('emree-local-ts',String(Date.now()));}catch(e){}}
+function applyState(d){
+  clearAnswers();
+  if(typeof d.exam==='boolean'){exam=d.exam;syncMode();}
+  let n=0;
+  for(const [id,st] of Object.entries(d.s||{})){
+    const q=document.getElementById(id);if(!q||!st)continue;
+    if(st.v&&'ABCDE'.indexOf(st.v)>=0){const r=q.querySelector('input[value="'+st.v+'"]');if(r){r.checked=true;delete q.dataset.peep;mark(q);n++;}}
+    if(st.f)toggleFlag(q,true);
+  }
+  if(d.timer&&typeof d.timer.left==='number'){try{left=Math.max(0,Math.min(180*60,d.timer.left|0));draw();}catch(e){}}
+  bumpLocalTs();applyFilters();scores();return n;
+}
+async function doResetFlow(){
+  let an=0,ok=0,fl=0;
+  items.forEach(q=>{const s=q.querySelector('input:checked');if(s){an++;if(s.value===q.dataset.answer)ok++;}if(q.classList.contains('flagged'))fl++;});
+  if(!an&&!fl){resetState();return;}
+  const yes=await emConfirm({title:'Reset all progress?',body:'This clears your answers, flags and timer on this device. Export first if you might want them back — this cannot be undone.',meta:an+' answered · '+ok+' correct · '+fl+' flagged',okLabel:'Reset everything',danger:true});
+  if(yes)resetState();
+}
+function resetState(){
+  $('q').value='';$('f').value='all';clearAnswers();
+  try{clearInterval(t);}catch(e){}t=null;left=180*60;draw();
+  save();applyFilters();scores();
+}
+function collectState(){
+  const s={};items.forEach(q=>{const c=q.querySelector('input:checked');s[q.id]={v:c?c.value:null,f:q.classList.contains('flagged')};});
+  return {app:'emree-qbank',v:1,exportedAt:new Date().toISOString(),exam,s,timer:{left,running:!!t}};
+}
+function validPayload(d){
+  if(!d||d.app!=='emree-qbank'||!d.s||typeof d.s!=='object')return 0;
+  let n=0;
+  for(const id of Object.keys(d.s)){
+    const q=document.getElementById(id);if(!q)continue;
+    const st=d.s[id];if(st&&(st.v==null||'ABCDE'.indexOf(st.v)>=0))n++;
+  }
+  return n;
+}
+function download(name,text){const b=new Blob([text],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),4000);}
+async function importFlow(file){
+  let d=null;try{d=JSON.parse(await file.text());}catch(e){d=null;}
+  if(!validPayload(d)){await emConfirm({title:'Could not import',body:'That file is not a valid EMREE progress export.',meta:'Expected emree-progress-*.json',okLabel:'Understood',onlyOk:true});return;}
+  const hasLocal=items.some(q=>q.querySelector('input:checked')||q.classList.contains('flagged'));
+  if(hasLocal){const yes=await emConfirm({title:'Replace current progress?',body:'Importing overwrites your answers and flags on this device.',meta:validPayload(d)+' answers in file',okLabel:'Replace',danger:true});if(!yes)return;}
+  const n=applyState(d);flashSave('Imported '+n+' answers');
+}
+function b64e(s){return btoa(s).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');}
+function b64d(s){s=String(s).replace(/-/g,'+').replace(/_/g,'/');while(s.length%4)s+='=';return atob(s);}
+function encodeProgress(){
+  let a='',bits='';
+  items.forEach(q=>{const c=q.querySelector('input:checked');a+=c?c.value:'.';bits+=q.classList.contains('flagged')?'1':'0';});
+  const bytes=[];for(let i=0;i<bits.length;i+=8)bytes.push(parseInt((bits.slice(i,i+8)+'00000000').slice(0,8),2));
+  return 'v1'+(exam?'E':'P')+a+'~'+b64e(String.fromCharCode.apply(null,bytes));
+}
+function decodeProgress(raw){
+  if(typeof raw!=='string'||raw.slice(0,2)!=='v1')return null;
+  const mode=raw[2],rest=raw.slice(3).split('~');
+  if((mode!=='E'&&mode!=='P')||rest.length!==2)return null;
+  const a=rest[0];if(a.length!==items.length||/[^.A-E]/.test(a))return null;
+  let bin='';try{const s=b64d(rest[1]);for(let i=0;i<s.length;i++)bin+=s.charCodeAt(i).toString(2).padStart(8,'0');}catch(e){return null;}
+  if(bin.length<items.length)return null;
+  const s={};items.forEach((q,i)=>{s[q.id]={v:a[i]==='.'?null:a[i],f:bin[i]==='1'};});
+  return {exam:mode==='E',s};
+}
+async function copyText(txt,okMsg){
+  try{await navigator.clipboard.writeText(txt);flashSave(okMsg);return;}
+  catch(e){}
+  const ta=document.createElement('textarea');ta.value=txt;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();
+  try{ta.setSelectionRange(0,ta.value.length);}catch(e2){}
+  let done=false;try{done=document.execCommand('copy');}catch(e3){}
+  ta.remove();
+  if(done)flashSave(okMsg);
+  else prompt('Copy your resume link:',txt);
+}
+document.getElementById('expBtn').addEventListener('click',()=>{
+  download('emree-progress-'+new Date().toISOString().slice(0,10)+'.json',JSON.stringify(collectState()));
+  flashSave('Exported — keep this file safe');
+});
+document.getElementById('impBtn').addEventListener('click',()=>document.getElementById('impFile').click());
+document.getElementById('impFile').addEventListener('change',e=>{if(e.target.files&&e.target.files[0])importFlow(e.target.files[0]);e.target.value='';});
+document.getElementById('linkBtn').addEventListener('click',()=>{
+  copyText(location.href.split('#')[0]+'#p='+encodeProgress(),'Link copied — open it on any device to load this progress');
+});
+// ---------- optional online sync (Firebase, free tier; no-ops until configured) ----------
+window.__emreePush=function(){};
+(function(){
+  const cfg=(window.EMREE_CONFIG&&window.EMREE_CONFIG.firebase)||null;
+  const line=document.getElementById('syncLine');
+  const okCfg=!!(cfg&&cfg.apiKey&&cfg.projectId&&cfg.appId&&!/PASTE/i.test(String(cfg.apiKey)));
+  if(!okCfg){line.innerHTML='Sync: local only — <a href="https://github.com/humaizm/emree-study/blob/main/docs/SYNC.md">set up free online sync</a>';return;}
+  line.textContent='Sync: starting…';
+  const VER='10.12.5',FB='https://www.gstatic.com/firebasejs/'+VER+'/';
+  const loadScript=src=>new Promise((res,rej)=>{const s=document.createElement('script');s.src=src;s.onload=()=>res();s.onerror=()=>rej(new Error('load '+src));document.head.appendChild(s);});
+  let db=null,started=false,pid=null,pushT=null;
+  window.__emreePush=()=>{if(!started||!db)return;clearTimeout(pushT);pushT=setTimeout(push,2000);};
+  function setLine(x){line.textContent=x;}
+  function fmt(k){return k.replace(/(.{4})(?=.)/g,'$1-');}
+  function genKey(){const A='ABCDEFGHJKMNPQRSTVWXYZ23456789';let s='';try{const b=new Uint8Array(16);crypto.getRandomValues(b);for(let i=0;i<16;i++)s+=A[b[i]%32];}catch(e){for(let i=0;i<16;i++)s+=A[Math.floor(Math.random()*32)];}return s;}
+  function doc(){return db.collection('progress').doc(pid);}
+  function savedAt(){try{return new Date().toLocaleTimeString([],{hour:'2-digit',minute:'2-digit',second:'2-digit'});}catch(e){return '';}}
+  function push(){
+    if(!started||!db||!pid)return;
+    const s={};items.forEach(q=>{const c=q.querySelector('input:checked');s[q.id]={v:c?c.value:null,f:q.classList.contains('flagged')};});
+    const now=Date.now();
+    doc().set({v:1,exam,s,timerLeft:left,updatedAt:firebase.firestore.FieldValue.serverTimestamp()}).then(()=>{
+      try{localStorage.setItem('emree-local-ts',String(now));}catch(e){}
+      setLine('Sync: on · saved '+savedAt());
+    }).catch(()=>setLine('Sync: offline — changes kept on this device'));
+  }
+  function pull(){
+    if(!started||!db||!pid)return;
+    doc().get().then(snap=>{
+      if(!snap.exists){push();return;}
+      const r=snap.data()||{};
+      const rt=r.updatedAt&&r.updatedAt.toMillis?r.updatedAt.toMillis():0;
+      let lt=0;try{lt=parseInt(localStorage.getItem('emree-local-ts')||'0',10)||0;}catch(e){}
+      if(rt>lt+5000){applyState({exam:!!r.exam,s:r.s||{},timer:{left:(typeof r.timerLeft==='number'?r.timerLeft:left)}});flashSave('Synced newer progress from your other device');}
+    }).catch(()=>setLine('Sync: offline — changes kept on this device'));
+  }
+  function showUI(){
+    document.getElementById('syncBtns').hidden=false;
+    const kb=document.getElementById('syncKeyBtn');
+    kb.textContent='Key: '+fmt(pid);
+    kb.onclick=()=>copyText(fmt(pid),'Device key copied — enter it on your other device');
+    document.getElementById('syncJoinBtn').onclick=()=>{document.getElementById('syncJoinRow').hidden=false;document.getElementById('joinKey').focus();};
+    document.getElementById('joinCancel').onclick=()=>{document.getElementById('syncJoinRow').hidden=true;};
+    document.getElementById('joinGo').onclick=async ()=>{
+      const raw=(document.getElementById('joinKey').value||'').toUpperCase().replace(/[^A-Z2-7]/g,'');
+      if(raw.length!==16){await emConfirm({title:'That key looks short',body:'Device keys are 16 characters, shown as four groups of four.',meta:'',okLabel:'Understood',onlyOk:true});return;}
+      if(raw===pid){document.getElementById('syncJoinRow').hidden=true;return;}
+      const hasLocal=items.some(q=>q.querySelector('input:checked')||q.classList.contains('flagged'));
+      if(hasLocal){const yes=await emConfirm({title:'Switch device key?',body:'This device will sync a different progress record. Anything unsynced here stays only in this browser until you switch back.',meta:'New key: '+fmt(raw),okLabel:'Switch key',danger:true});if(!yes)return;}
+      try{localStorage.setItem('emree-sync-pid',raw);}catch(e){}
+      location.reload();
+    };
+  }
+  function init(){
+    if(started)return;started=true;
+    try{pid=localStorage.getItem('emree-sync-pid')||null;}catch(e){pid=null;}
+    if(!pid){pid=genKey();try{localStorage.setItem('emree-sync-pid',pid);}catch(e){}}
+    showUI();
+    firebase.initializeApp(cfg);
+    firebase.auth().signInAnonymously().then(()=>{
+      db=firebase.firestore();setLine('Sync: on · connected');
+      pull();
+      document.addEventListener('visibilitychange',()=>{if(!document.hidden)pull();});
+    }).catch(()=>{started=false;setLine('Sync: offline — will retry when you are back online');});
+  }
+  Promise.all([loadScript(FB+'firebase-app-compat.js'),loadScript(FB+'firebase-auth-compat.js'),loadScript(FB+'firebase-firestore-compat.js')]).then(init).catch(()=>setLine('Sync unavailable — progress stays on this device'));
+  window.addEventListener('online',()=>{if(!started)init();});
+})();
+// ---------- shared-link loader (runs after local restore) ----------
+(function(){
+  if(!location.hash||location.hash.slice(0,3)!=='#p=')return;
+  let d=null;try{d=decodeProgress(location.hash.slice(3));}catch(e){d=null;}
+  const strip=()=>{try{history.replaceState(null,'',location.pathname+location.search);}catch(e){}};
+  if(!d){strip();return;}
+  const hasLocal=items.some(q=>q.querySelector('input:checked')||q.classList.contains('flagged'));
+  const go=()=>{applyState(d);strip();flashSave('Shared progress loaded');};
+  if(!hasLocal){go();}
+  else{emConfirm({title:'Load shared progress?',body:'This link carries answers and flags. Loading replaces what you have on this device.',meta:Object.keys(d.s).filter(k=>d.s[k].v).length+' answers in link',okLabel:'Load shared',danger:true}).then(yes=>{if(yes)go();else strip();});}
+})();
 </script>
 </body>
 </html>

@@ -1,0 +1,30 @@
+rules_version = '2';
+// EMREE Question Bank - Firestore rules.
+//
+// Threat model: quiz progress is low-sensitivity, but quota-burning is the
+// real risk on a free plan. These rules: anonymous auth required, one narrow
+// collection, strict schema, size caps, server timestamp enforced.
+// Deploy: Firebase console -> Firestore Database -> Rules tab -> paste -> Publish.
+// (No CLI needed.)
+service cloud.firestore {
+  match /databases/{db}/documents {
+    // One document per device-key: progress/{16-char key}
+    match /progress/{pid} {
+      allow read: if request.auth != null && pid.size() == 16;
+      allow create, update: if request.auth != null
+        && pid.size() == 16
+        && request.resource.data.keys().hasOnly(['v', 'exam', 's', 'timerLeft', 'updatedAt'])
+        && request.resource.data.v == 1
+        && request.resource.data.exam is bool
+        && request.resource.data.s.size() <= 200
+        && request.resource.data.timerLeft is int
+        && request.resource.data.timerLeft >= 0
+        && request.resource.data.timerLeft <= 10800
+        && request.resource.data.updatedAt == request.time;
+    }
+    // Everything else: denied.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

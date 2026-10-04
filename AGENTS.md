@@ -29,6 +29,9 @@ that was considered and rejected (hosting fees, patching, something to die).
 | `bank/*.json` + `bank/manifest.json` | **Content source of truth.** 7 subject files, one manifest. | Edit freely; keep schema + rules in `bank/README.md`. |
 | `tools/build_site.py` | Validator + renderer. Checks schema, sequential ids, answer-letter alignment, banned artifacts; rebuilds bank-derived regions of `index.html`. Deterministic + idempotent. | Extend validation here, not ad hoc. |
 | `index.html` | The site. Bank-derived regions (rail nav, contents, chapters, global counts) are **generated**; everything else (CSS, JS, deck shell, colophon prose) is hand-maintained template copied verbatim by the builder. | Small copy/design edits directly are safe and survive rebuilds. Never hand-edit a question stem/option/answer — change the bank and rebuild. |
+| `site-config.js` | Optional Firebase config (`null` = fully offline app). Public by design when filled. | Never put secrets here — none are needed. The app must behave identically with it null. |
+| `firestore.rules` | Security contract for the optional sync backend. | Client payload schema must match these rules exactly (keys, types, server timestamp). |
+| `docs/SYNC.md` | 5-minute Firebase setup recipe + cost/abuse notes. | Keep quota numbers truthful; update if Firebase terms change. |
 | `EMREE_Past_Papers_by_Subject_Oct2026.pdf` | Companion intelligence file (exam facts, recall map). Built once from a local script; treated as a static asset here. | Don't rebuild casually; content is frozen. |
 | `.github/workflows/validate.yml` | CI: runs `build_site.py --check` on every push. Page and bank cannot drift. | Don't weaken it. |
 | `bank/README.md`, `README.md`, `LICENSE` | Docs. `bank/README.md` also documents the raw/jsDelivr JSON URLs (the free "API"). | Keep in sync when structure changes. |
@@ -68,8 +71,17 @@ type / evaluate. Check console messages — **zero errors is the bar**
 - **Exam mode:** answering records neutrally ("Answered — held for grading");
   scores/dots/labels count *answered*, never correct. Feedback returns on
   switching to Practice or Show all. Never leak the letter in exam mode.
-- **Reset** clears answers, flags, search, and filter (landing on an empty
-  filtered page after Reset was a real shipped bug — see §7).
+- **Reset** always warns first (modal with counts; Esc/backdrop cancels, focus
+  starts on Cancel). It clears answers, flags, search, filter, and timer.
+- **Progress safety:** auto-save indicator in the deck; Export downloads
+  `emree-progress-*.json`; Import validates then asks before overwriting;
+  Copy-link encodes all answers+flags in the URL hash (`v1…~…`, tilde separator
+  — a `.` separator was tried and collides with the unanswered marker).
+  Shared links auto-apply on empty devices, ask otherwise, then strip the hash.
+- **Timer** persists across reloads (paused, never auto-resumes — deliberate).
+- **Online sync (optional):** offline-first; local is primary, Firestore is the
+  roaming copy; newest timestamp wins; debounced pushes; device keys link
+  devices. With no config, the sync UI shows local-only and no SDK loads.
 - **Hide all** hides every teaching point, including answered ones.
 - **Keyboard** `1–5`/`A–E` answers the *nearest displayed* question and scrolls
   it into view; `/` focuses search. Must work at page top (dead zone there was
@@ -89,7 +101,9 @@ type / evaluate. Check console messages — **zero errors is the bar**
 - **Repo name stays `emree-study`.** Renaming breaks the shared Pages URL (old
   one 404s — verified). Visible branding ("EMREE Question Bank") is independent
   of the repo slug.
-- **localStorage key stays `emree-ledger-v2`.** Renaming wipes users' scores.
+- **localStorage keys stay.** `emree-ledger-v2` (progress), `emree-sync-pid`
+  (device key), `emree-local-ts` (last-write clock for sync merge). Renaming any
+  of them wipes or strands users' data.
 - **Release style is `0.x.y` only**, one release at a time if the user says so.
   Retag procedure: `gh release delete <tag> --repo humaizm/emree-study --yes
   --cleanup-tag`, then create the new one on the same commit.
