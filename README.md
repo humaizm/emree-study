@@ -1,7 +1,7 @@
 # EMREE Question Bank — 120 Questions by Subject
 
-**Live:** https://humaizm.github.io/emree-study-ledger/
-**Companion PDF:** https://humaizm.github.io/emree-study-ledger/EMREE_Past_Papers_by_Subject_Oct2026.pdf
+**Live:** https://humaizm.github.io/emree-study/
+**Companion PDF:** https://humaizm.github.io/emree-study/EMREE_Past_Papers_by_Subject_Oct2026.pdf
 
 Interactive EMREE practice: 120 single-best-answer vignettes across the 7 NIHS
 blueprint subjects, with instant marking, exam-hold mode, 3-hour timer, search,

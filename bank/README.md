@@ -53,8 +53,8 @@ Rules enforced by `tools/build_site.py` (and by CI on every push):
 
 Because the repo is public, every file is fetchable with zero backend:
 
-- `https://raw.githubusercontent.com/humaizm/emree-study-ledger/main/bank/im.json`
-- `https://cdn.jsdelivr.net/gh/humaizm/emree-study-ledger@main/bank/manifest.json`
+- `https://raw.githubusercontent.com/humaizm/emree-study/main/bank/im.json`
+- `https://cdn.jsdelivr.net/gh/humaizm/emree-study@main/bank/manifest.json`
 
 ## Provenance
 
